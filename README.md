@@ -1,2 +1,2 @@
-# Krasnoyarsk_project
+# Github-pages (Krasnoyarsk)
 Kr. kray news viewer and checker(not mine part of machine learning - on first page, so it is does not working).
