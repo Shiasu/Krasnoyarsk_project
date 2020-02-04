@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="./js/articles.js"></script>
+	<link rel="stylesheet" type="text/css" href="./style/articles.css">
+	<title>Project</title>
+</head>
+<body>
+	<div class="content_wrapper">
+		<!--module: gulp-rigger includes here from /partials-->
+		//=./template/header.html
+		
+		<main>
+			<section>
+				<h1>Просмотр исходных статей</h1>
+				<p>Здесь вы можете найти и посмотреть статьи в первоисточнике с возможностью фильтрации</p>
+				<div class="sorting_selection">
+					<div>
+						<p>Фильтрация по категории и месту</p>
+					</div>
+					<select id="category_select" class="sorting" name="category">
+						<option value="all_categories">Без фильтра</option>
+						<option value="politics">Политика</option>
+						<option value="economy">Экономика</option>
+						<option value="accidents">Происшествия</option>
+						<option value="society">Общество</option>
+						<option value="culture">Культура</option>
+						<option value="sport">Спорт</option>
+					</select>
+					<select id="location_select" class="sorting" name="location">
+						<option value="all_regions">Без фильтра</option>
+						<option value="region">В Кр.крае/Хакасии</option>
+						<option value="siberia">В Сибири</option>
+						<option value="russia">В России</option>
+						<option value="world">В мире</option>
+					</select>
+				</div>
+				<div class="news_links">
+					<a target="blank" href="https://newslab.ru/news/905545" class="accidents region">В Красноярске полицейские остановили «Шкоду» за чрезмерную тонировку и случайно выявили подделку VIN номера (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/905508" class="society region">Спасатели показали полет над тайгой и десантирование с парашютом на Ману (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/905121" class="accidents region">В Красноярском крае браконьер пытался вывезти мешки с мясом убитого медведя и попался полиции</a>
+					<a target="blank" href="https://newslab.ru/news/899885" class="society region">В Норильске обсудили вопросы реконструкции местного аэропорта</a>
+					<a target="blank" href="https://newslab.ru/news/905096" class="accidents region">Красноярская велосипедистка отсудила 300 тысяч за аварию с автобусом</a>
+					<a target="blank" href="https://newslab.ru/news/905094" class="society russia">МВД планирует провести ревизию правил дорожного движения</a>
+					<a target="blank" href="https://newslab.ru/news/905095" class="society region">В Красноярск прилетела российская общественница Нюта Федермессер</a>
+					<a target="blank" href="https://newslab.ru/news/905093" class="accidents region">«Справедливо повысить ответственность»: красноярская полиция предложила ужесточить наказание для водителей-пьяниц</a>
+					<a target="blank" href="https://newslab.ru/news/905092" class="society region">Красноярцам разрешили кататься на велосипедах и роликах только по середине вантового моста</a>
+					<a target="blank" href="https://newslab.ru/news/905090" class="society region">Голая девушка проехалась на байке по красноярским дорогам (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/905089" class="society region">Выдавать паспорта фасадам Красноярска будут по новым правилам</a>
+					<a target="blank" href="https://newslab.ru/news/905088" class="society region">Мужчина прыгнул в Чулым с плотины Назаровской ГРЭС. Ищут спасатели</a>
+					<a target="blank" href="https://newslab.ru/news/905086" class="accidents region">Вытрезвители предлагают открыть в шести городах Красноярского края</a>
+					<a target="blank" href="https://newslab.ru/news/905510" class="society russia">«Ростелеком» назвал победителей конкурса региональных журналистов «Вместе в цифровое будущее»</a>
+					<a target="blank" href="https://newslab.ru/news/905085" class="society region">Красноярцы несколько дней дышали сажей и пылью</a>
+					<a target="blank" href="https://newslab.ru/news/905087" class="economy region">Проблемные дома программы «Жилье для российской семьи» в Солонцах-2 пообещали сдать до конца года</a>
+					<a target="blank" href="https://newslab.ru/news/905084" class="society region">«Купаться и загорать нельзя»: ни один из красноярских пляжей не получил разрешения на работу</a>
+					<a target="blank" href="https://newslab.ru/news/905082" class="society region">МегаФон запустил специальную платформу для поиска пропавших людей</a>
+					<a target="blank" href="https://newslab.ru/news/905081" class="society region">60 домов Советского района получат горячую воду уже через 2,5 дня после ее отключения</a>
+					<a target="blank" href="https://newslab.ru/news/905080" class="accidents world">СМИ: турист из Красноярска умер в Таиланде возле полицейского участка</a>
+					<a target="blank" href="https://newslab.ru/news/905079" class="accidents region">Ночью во дворе на Железнодорожников сгорели 3 машины (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/905078" class="society region">Один из самых больших и популярных красноярских рынков накажут за мусор</a>
+					<a target="blank" href="https://newslab.ru/news/905030" class="society region">Питомец юрского периода, муми-праздник и новое состязание «Красного Яра»: среда в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/904980" class="society region">Самое интересное в Красноярске за 18 июня: мэр-байкер, новый мостик и странные похищения</a>
+					<a target="blank" href="https://newslab.ru/news/905514" class="economy region">КрасКом инвестировал более 800 миллионов рублей в городскую систему жизнеобеспечения</a>
+					<a target="blank" href="https://newslab.ru/news/904981" class="accidents russia">В России сократилось количество пропавших детей и подростков</a>
+					<a target="blank" href="https://newslab.ru/news/904979" class="accidents region">Красноярца осудили к 21 году колонии за похищение человека, убийство, разбой и аферы с дорогими квартирами</a>
+					<a target="blank" href="https://newslab.ru/news/904978" class="society region">На рекламные щиты в Красноярске добавят особые коды</a>
+					<a target="blank" href="https://newslab.ru/news/904977" class="accidents region">Кибермошенники научились подделывать официальные номера банков и пытаются воровать деньги у красноярцев</a>
+					<a target="blank" href="https://newslab.ru/news/904976" class="accidents region">В Красноярске прогремит гроза и усилится ветер</a>
+					<a target="blank" href="https://newslab.ru/news/904975" class="society region">В Красноярске собака с инвалидной коляской ищет хозяев</a>
+					<a target="blank" href="https://newslab.ru/news/904974" class="society region">«Выявим лучших представителей пород»: в Красноярске пройдут конные соревнования «Большой Сибирский круг-2019»</a>
+					<a target="blank" href="https://newslab.ru/news/904944" class="accidents region">Красноярский школьник на велосипеде попал под Nissan. В ГИБДД рассказали, какие правила он нарушил (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904945" class="economy region">На ЭХЗ ввели в эксплуатацию газовые центрифуги нового поколения</a>
+					<a target="blank" href="https://newslab.ru/news/904943" class="accidents region">Красноярец выбросил приятеля из окна и попал под следствие</a>
+					<a target="blank" href="https://newslab.ru/news/905507" class="accidents region">Найдены родственники разбившегося под Красноярском на американском истребителе советского летчика</a>
+					<a target="blank" href="https://newslab.ru/news/904942" class="sport region">«Игру спасают вратари»: в Красноярске завершился очередной тур «Лиги чемпионов бизнеса»</a>
+					<a target="blank" href="https://newslab.ru/news/904941" class="society region">Воздух в Красноярске планируют сделать в два раза чище</a>
+					<a target="blank" href="https://newslab.ru/news/904939" class="accidents region">Красноярский военный избил сослуживца и избежал колонии</a>
+					<a target="blank" href="https://newslab.ru/news/904938" class="society region">Роспотребнадзор опроверг информацию о резком росте заболеваемости коклюшем среди детей</a>
+					<a target="blank" href="https://newslab.ru/news/904940" class="society region">«Это всего лишь дешевая альтернатива собственному транспорту»: красноярцы высказались о запрете каршеринга для нарушителей ПДД</a>
+					<a target="blank" href="https://newslab.ru/news/904937" class="accidents region">В Красноярске вандалы испортили несколько памятников в Гвардейском парке</a>
+					<a target="blank" href="https://newslab.ru/news/904936" class="accidents region">Богучанец хотел купить трактор и попался на стандартную уловку мошенника</a>
+					<a target="blank" href="https://newslab.ru/news/904935" class="politics region">У красноярских депутатов похитили ростовую фигуру Жириновского</a>
+					<a target="blank" href="https://newslab.ru/news/904934" class="accidents region">В Сосновоборске неосторожный строитель упал с высоты и погиб</a>
+					<a target="blank" href="https://newslab.ru/news/904933" class="society region">В Красноярске стартовал экологический марафон «День Енисея»</a>
+					<a target="blank" href="https://newslab.ru/news/905506" class="economy region">КрАЗ признали лучшим предприятием Красноярска в области охраны труда и социального партнерства</a>
+					<a target="blank" href="https://newslab.ru/news/904907" class="society region">Из красноярского сквера вывезли зеленые фигуры жирафов</a>
+					<a target="blank" href="https://newslab.ru/news/904906" class="accidents region">Иркутские туристы вынесли с красноярских «Столбов» новорожденных оленят. Оштрафуют за браконьерство</a>
+					<a target="blank" href="https://newslab.ru/news/904905" class="society region">Через Николаевский проспект построят еще один надземный переход</a>
+					<a target="blank" href="https://newslab.ru/news/904904" class="accidents region">Юный красноярец проведет в колонии 16 лет за попытку наладить торговлю наркотиками (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904900" class="sport russia">«Норникель» поддержал спортивный праздник накануне Европейских игр в Минске</a>
+					<a target="blank" href="https://newslab.ru/news/904903" class="society russia">Воспитанники красноярского детского дома и дети горняков СУЭК начали летние каникулы в Подмосковье</a>
+					<a target="blank" href="https://newslab.ru/news/904902" class="society region">Мэр в «косухе» прокатился по Красноярску с легендарными байкерами (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904901" class="society region">Женщина-врач из красноярской поликлиники стала лучшим педиатром страны</a>
+					<a target="blank" href="https://newslab.ru/news/904899" class="accidents region">«Варварски выкопали»: красноярцы похитили цветы с клумб в сквере на Конституции</a>
+					<a target="blank" href="https://newslab.ru/news/904897" class="accidents region">Трое красноярцев не смогли спуститься с Манской петли и попросили помощи у спасателей</a>
+					<a target="blank" href="https://newslab.ru/news/905504" class="accidents region">ГИБДД объявила о масштабных облавах на дорогах Красноярска. Скрытые патрули проследят за всеми водителями</a>
+					<a target="blank" href="https://newslab.ru/news/904896" class="accidents region">Следственный комитет начал проверку после обращения красноярцев к Путину</a>
+					<a target="blank" href="https://newslab.ru/news/904895" class="accidents region">Возле «Планеты» водитель сбил 16-летнюю девочку-нарушительницу</a>
+					<a target="blank" href="https://newslab.ru/news/904758" class="society region">В автосалоне ФЦ-Редут пройдет вечер распродаж Ford со скидкой до 400 тысяч рублей</a>
+					<a target="blank" href="https://newslab.ru/news/904848" class="society region">Посылка с мужем, запретный метр о великом кутюрье и ГТО: вторник в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/904795" class="society region">Самое интересное в Красноярске за 17 июня: внезапный фонтан, страдания Белых рос и захиревшие ели</a>
+					<a target="blank" href="https://newslab.ru/news/904798" class="politics region">«Я шокирован цинизмом заявлений»: губернатор рассказал о скандале в лесной отрасли Красноярского края</a>
+					<a target="blank" href="https://newslab.ru/news/904799" class="region">Красноярские общественники едва не поссорились из-за спасения уникального дуба</a>
+					<a target="blank" href="https://newslab.ru/news/904797" class="politics region">Александр Усс прокомментировал слухи о своем двойном гражданстве</a>
+					<a target="blank" href="https://newslab.ru/news/904796" class="accidents region">В Богучанском районе главу сельсовета поймали на взятке от лесозаготовителя</a>
+					<a target="blank" href="https://newslab.ru/news/904794" class="economy siberia">Красноярская сеть «Мясничий» открыла 33-й магазин (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/905503" class="accidents region">«Боится людей, может передвигаться по кустам»: в Красноярском крае ищут 82-летнего мужчину</a>
+					<a target="blank" href="https://newslab.ru/news/904793" class="society region">«Арендовали квартиры и жили у друзей»: енисейских чиновников заставили обеспечить детей-сирот жильем</a>
+					<a target="blank" href="https://newslab.ru/news/904792" class="accidents region">В Северном из-под земли бьет огромный фонтан воды (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904791" class="accidents region">В Красноярском крае запустили новый сервис оповещения о штрафах ГИБДД</a>
+					<a target="blank" href="https://newslab.ru/news/904790" class="society region">У посетителей «Роева ручья» заберут опасные лакомства для животных</a>
+					<a target="blank" href="https://newslab.ru/news/904765" class="society region">Электрохимический завод впервые поставил крупную партию дисков из изотопа иридий-191</a>
+					<a target="blank" href="https://newslab.ru/news/904764" class="society region">Суд не разрешил откладывать снос ларьков в Центральном парке Красноярска</a>
+					<a target="blank" href="https://newslab.ru/news/904763" class="society region">«Игрушечный бартер и покупка послушания»: красноярских детсадовцев обучают финансовой грамотности</a>
+					<a target="blank" href="https://newslab.ru/news/904762" class="society region">Красноярцев предупредили о смертельно опасной для младенцев инфекции. Прививки нужны и взрослым</a>
+					<a target="blank" href="https://newslab.ru/news/904761" class="society russia">Аналитики посчитали траты на выпускной банкет для российского школьника</a>
+					<a target="blank" href="https://newslab.ru/news/904760" class="accidents region">На юге края во время пожара сильно пострадал 3-летний мальчик. Мать была на работе</a>
+					<a target="blank" href="https://newslab.ru/news/905499" class="accidents region">Водитель внедорожника в Назарово разбил чужое авто на встречке и отказался платить за ремонт</a>
+					<a target="blank" href="https://newslab.ru/news/904757" class="accidents region">Под Красноярском полицейские поймали 12-летнего подростка за рулем квадроцикла. Оштрафуют отца (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904756" class="society region">Более 36 тысяч железногорцев будут получать единую квитанцию от «Красноярскэнергосбыта»</a>
+					<a target="blank" href="https://newslab.ru/news/904755" class="accidents siberia">В Кемерово строитель погиб от удара молнии</a>
+					<a target="blank" href="https://newslab.ru/news/904754" class="accidents region">Красноярцу вынесли приговор за расстрел чужой таксы в гаражах</a>
+					<a target="blank" href="https://newslab.ru/news/904753" class="society siberia">Омичи устроили заплывы на лодке по затопленному метро</a>
+					<a target="blank" href="https://newslab.ru/news/904752" class="accidents region">В Красноярске по гарантии начали менять деревья (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904751" class="economy region">Погрузка зерна на красноярской железной дороге за пять месяцев 2019 года увеличилась в 2,7 раза</a>
+					<a target="blank" href="https://newslab.ru/news/904750" class="society region">Долги по зарплате в Красноярском крае выросли к началу лета до 60 млн</a>
+					<a target="blank" href="https://newslab.ru/news/904725" class="society region">Часть елей возле здания красноярского правительства ожидает вырубка</a>
+					<a target="blank" href="https://newslab.ru/news/904724" class="society region">Жители Белых Рос страдают от шумных вечеринок на берегу (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/905474" class="society region">«Рубашки поло и фартуки цвета бордо»: экипажи красноярских автобусов переодели в летнюю форму</a>
+					<a target="blank" href="https://newslab.ru/news/904723" class="accidents region">В красноярских Черемушках лоб в лоб столкнулись рейсовый автобус и ВАЗ (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904722" class="accidents region">В Красноярском крае девушка напала с ножом на попутчика в поезде и выставила это как защиту от насильника</a>
+					<a target="blank" href="https://newslab.ru/news/904721" class="society region">Россияне одобряют желание своих детей начать работать до совершеннолетия</a>
+					<a target="blank" href="https://newslab.ru/news/904720" class="society region">Красноярским паломникам напомнили о прививках и об опасности общения с верблюдами</a>
+					<a target="blank" href="https://newslab.ru/news/904719" class="society region">Норильчане встретили у дороги исхудавшего белого медведя (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904718" class="economy region">ЭХЗ обнародовал отчет о деятельности за 2018 год</a>
+					<a target="blank" href="https://newslab.ru/news/904717" class="sport region">Футбольному «Енисею» назначили нового тренера</a>
+					<a target="blank" href="https://newslab.ru/news/904716" class="accidents region">Лесосибирского предпринимателя уличили в выводе миллионов за границу</a>
+					<a target="blank" href="https://newslab.ru/news/904715" class="accidents region">В Красноярске ищут сбежавшего из психдиспансера мужчину. Скрывается уже неделю</a>
+					<a target="blank" href="https://newslab.ru/news/904713" class="accidents region">В Красноярске с Коммунального моста прыгнул мужчина. Он выжил и попал в больницу</a>
+					<a target="blank" href="https://newslab.ru/news/905473" class="economy region">«Норникель» награжден премией «Инновация года» за программу «Технологический прорыв»</a>
+					<a target="blank" href="https://newslab.ru/news/904712" class="society region">Начинает работу выездная приемная комиссия СибГУ им. Решетнева</a>
+					<a target="blank" href="https://newslab.ru/news/904711" class="accidents region">«Ночь провела у подруги, а утром решила еще погулять»: пропавшую красноярскую школьницу нашли на остановке</a>
+					<a target="blank" href="https://newslab.ru/news/904710" class="society region">«Не жалейте малышей, опасность исходит от человека!»: жителей края просят не уносить птенцов из нацпарка</a>
+					<a target="blank" href="https://newslab.ru/news/904709" class="society region">После небольшого похолодания в Красноярск вернется жара</a>
+					<a target="blank" href="https://newslab.ru/news/904614" class="society region">Акробатический рок-н-ролл на берегу, мужские законы и модный поэт: понедельник в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/904612" class="society region">Красноярцы встали в пробку на въезде в город (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904585" class="accidents region">Красноярские школьники изуродовали заповедные скалы на следующий день после очистки</a>
+					<a target="blank" href="https://newslab.ru/news/904584" class="society region">Над Красноярском начинает скапливаться грязный воздух</a>
+					<a target="blank" href="https://newslab.ru/news/904559" class="accidents region">На «Столбах» в районе популярной скалы заблудились четверо туристов</a>
+					<a target="blank" href="https://newslab.ru/news/904558" class="accidents region">В енисейской больнице обворовали пожилого пациента</a>
+					<a target="blank" href="https://newslab.ru/news/905544" class="society region">До осени в Красноярске разработают концепцию развития туристской зоны «Столбов»</a>
+					<a target="blank" href="https://newslab.ru/news/905472" class="sport region">«Енисей-СТМ» определился с соперниками на Кубок Вызова</a>
+					<a target="blank" href="https://newslab.ru/news/904557" class="society region">В Красноярском крае заметили нехватку врачей</a>
+					<a target="blank" href="https://newslab.ru/news/904460" class="accidents region">На «Зените» автоледи сбила молодого пешехода-нарушителя (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904433" class="accidents region">В центре Красноярска из-за лужи водитель протаранил дом и 3 машины</a>
+					<a target="blank" href="https://newslab.ru/news/904432" class="economy region">Обманутым дольщикам из красноярских Черёмушек назвали новые сроки решения проблем</a>
+					<a target="blank" href="https://newslab.ru/news/904430" class="accidents region">На водоемах Красноярского края утонули 7 человек</a>
+					<a target="blank" href="https://newslab.ru/news/904429" class="society region">Красноярцам рассказали, что есть и пить в жару</a>
+					<a target="blank" href="https://newslab.ru/news/904428" class="accidents region">Под Красноярском застрелили опасных медведей (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904400" class="accidents region">Красноярским водителям напомнили о запрете разворота на популярной и аварийно-опасной дороге</a>
+					<a target="blank" href="https://newslab.ru/news/904399" class="economy region">С экс-председателя Минусинского горсовета взыщут 3 млн за сомнительную покупку дорогого джипа</a>
+					<a target="blank" href="https://newslab.ru/news/904397" class="accidents region">В Красноярском крае злостного водителя-пьяницу наконец лишили свободы. Суд назначил строгий режим заключения</a>
+					<a target="blank" href="https://newslab.ru/news/905471" class="accidents region">Минздрав назвал самые смертоносные виды рака в России</a>
+					<a target="blank" href="https://newslab.ru/news/904396" class="society region">В Красноярске официально открыли первый пляж. Его признали безопасным</a>
+					<a target="blank" href="https://newslab.ru/news/904398" class="society region">Цирк в центре города, этноэлектронный концерт и проделки опасной женщины: выходные в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/904300" class="society region">Самое интересное в Красноярске за 14 июня: опасные купания, мост «сомнений», зажиточные врачи в стране бедняков</a>
+					<a target="blank" href="https://newslab.ru/news/904299" class="sport region">В Красноярске команды СУЭК и минздрава сразились в шахфутбол</a>
+					<a target="blank" href="https://newslab.ru/news/904298" class="accidents region">На красноярском острове Молокова загорелся тополиный пух (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904297" class="economy russia">Красноярский край оказался в тройке лидеров по доступности биометрии для клиентов банков</a>
+					<a target="blank" href="https://newslab.ru/news/904296" class="society region">Новые автобусы Красноярска проверили на экологичность и оставили на них особые метки</a>
+					<a target="blank" href="https://newslab.ru/news/904295" class="accidents region">На Бограда пьяная автоледи врезалась в Volvo и повредила Toyota Land Cruiser (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904294" class="society region">В лесах Красноярского края высадили более 13 млн хвойных саженцев</a>
+					<a target="blank" href="https://newslab.ru/news/904293" class="society region">В Ужурском районе «корова-героиня» родила троих здоровых телят</a>
+					<a target="blank" href="https://newslab.ru/news/905470" class="society region">В семи районах края лесные пожары будут отслеживать с помощью видеокамер</a>
+					<a target="blank" href="https://newslab.ru/news/904292" class="society region">Замначальника полиции Красноярского края получил очередную звезду на погоны</a>
+					<a target="blank" href="https://newslab.ru/news/904267" class="society region">Фонтаны из Енисея будут запускать без подсветки из-за коротких ночей</a>
+					<a target="blank" href="https://newslab.ru/news/904266" class="culture region">Для победителей музыкальной премии фестиваля «МИР Сибири» изготовили бронзовые чаши</a>
+					<a target="blank" href="https://newslab.ru/news/904265" class="accidents region">В красноярской Покровке водитель пренебрег правилами на повороте. Пострадал 11-летний пассажир (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904264" class="society region">Со следующей недели 16 камер начнут фиксировать скорость водителей на трассах Красноярского края</a>
+					<a target="blank" href="https://newslab.ru/news/904262" class="economy russia">«Я всех поздравляю!»: губернатор прокомментировал начало освоения нефтяного месторождения на севере края</a>
+					<a target="blank" href="https://newslab.ru/news/904261" class="society region">Красноярцев спрашивают про отношение к кальянщикам на набережной</a>
+					<a target="blank" href="https://newslab.ru/news/904260" class="society region">В красноярском зоопарке впервые родились сине-желтые лягушата-дендробатисы (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904259" class="society region">В конце июня в Красноярске состоится юбилейный фестиваль «Зелёный»</a>
+					<a target="blank" href="https://newslab.ru/news/904258" class="accidents region">«Ребенок не умел плавать»: стали известны подробности гибели 10-летней девочки на озере</a>
+					<a target="blank" href="https://newslab.ru/news/905469" class="accidents region">В Красноярске взялись за обработку новых территорий атаки клещей (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904257" class="society region">Корреспондент Newslab стала призером журналистского конкурса от «Ростелекома»</a>
+					<a target="blank" href="https://newslab.ru/news/904256" class="society region">В Красноярском крае назвали даты школьных выпускных</a>
+					<a target="blank" href="https://newslab.ru/news/904255" class="accidents region">В Красноярском крае трое парней катались по деревне с пьяным водителем и попали в ДТП. Один погиб</a>
+					<a target="blank" href="https://newslab.ru/news/904254" class="society region">В асфальт Красноярска вшивают волокна целлюлозы для прочности</a>
+					<a target="blank" href="https://newslab.ru/news/904253" class="society region">Ради поездки в Грецию житель Эвенкии погасил долг по кредитам</a>
+					<a target="blank" href="https://newslab.ru/news/904250" class="accidents region">В Красноярске две ночи подряд будут перекрывать дороги и проверять всех водителей</a>
+					<a target="blank" href="https://newslab.ru/news/904249" class="accidents region">Красноярский офицер МЧС хотел получить взятку от предпринимателя. Проведет годы в колонии строгого режима (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904248" class="sport siberia">За убийство красноярца из-за фанатской символики житель Новосибирска получил 8,5 лет колонии</a>
+					<a target="blank" href="https://newslab.ru/news/904247" class="society region">Половина российских семей находится за чертой бедности</a>
+					<a target="blank" href="https://newslab.ru/news/904222" class="accidents region">Военный хотел избежать наказания за пьяную езду и переложил ответственность на брата-подростка</a>
+					<a target="blank" href="https://newslab.ru/news/905468" class="economy region">Кредитно-гарантийный портфель ВТБ в Красноярском крае превысил 115 млрд рублей</a>
+					<a target="blank" href="https://newslab.ru/news/904221" class="society region">Для маленьких пассажиров железнодорожного вокзала открыли детский городок</a>
+					<a target="blank" href="https://newslab.ru/news/904220" class="accidents region">На трассе в Красноярском крае крупный медведь едва не попал под колёса авто (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904219" class="society region">Статистики подсчитали зарплаты красноярских врачей. Получают намного выше среднего</a>
+					<a target="blank" href="https://newslab.ru/news/904218" class="society russia">Проект СУЭК по развитию детских шахмат стал победителем всероссийского конкурса</a>
+					<a target="blank" href="https://newslab.ru/news/904217" class="accidents region">«Невозможно запретить детям купаться»: красноярец попросил поставить на Татышеве дежурных спасателей</a>
+					<a target="blank" href="https://newslab.ru/news/904216" class="society siberia">Красноярцев позвали посмотреть на гонки гаишников</a>
+					<a target="blank" href="https://newslab.ru/news/904215" class="accidents null">Роспотребнадзор описал признаки опасных интернет-магазинов</a>
+					<a target="blank" href="https://newslab.ru/news/904214" class="accidents region">В Лесосибирске владельца общественной бани поймали на мошенничестве. Внес в отчет умерших клиентов</a>
+					<a target="blank" href="https://newslab.ru/news/904213" class="economy region">ВТБ в Красноярском крае увеличил выдачи ипотеки на 22 %</a>
+					<a target="blank" href="https://newslab.ru/news/904212" class="accidents region">Клещи стали еще активнее нападать на красноярцев. Специалисты назвали это нормальным</a>
+					<a target="blank" href="https://newslab.ru/news/905467" class="society region">Ремонтом правобережной набережной Красноярска займётся «прославившийся» плохими бордюрами подрядчик</a>
+					<a target="blank" href="https://newslab.ru/news/904211" class="politics region">У красноярского министра культуры новый заместитель. Им стала женщина-библиотекарь</a>
+					<a target="blank" href="https://newslab.ru/news/904210" class="society region">На вантовом в Красноярске снова меняют правила для пешеходов и велосипедистов</a>
+					<a target="blank" href="https://newslab.ru/news/904208" class="accidents region">В Красноярском крае директора школы поймали на использовании поддельного диплома</a>
+					<a target="blank" href="https://newslab.ru/news/904207" class="society region">В этом году медведи на «Столбах» начали купаться позже обычного</a>
+					<a target="blank" href="https://newslab.ru/news/904206" class="society region">Красноярцев позвали в путешествие на электричке и теплоходе до Дивногорска</a>
+					<a target="blank" href="https://newslab.ru/news/904205" class="society region">На Бограда почти на месяц перекроют движение</a>
+					<a target="blank" href="https://newslab.ru/news/904204" class="society region">На выходных жара в Красноярске достигнет пика</a>
+					<a target="blank" href="https://newslab.ru/news/904203" class="accidents region">В Кедровом на глазах у матери утонула 10-летняя девочка</a>
+					<a target="blank" href="https://newslab.ru/news/904202" class="accidents region">Столкнувшиеся на Коммунальном мосту иномарки опрокинули трактор</a>
+					<a target="blank" href="https://newslab.ru/news/904031" class="society russia">Yota вернёт деньги за покупки через приложение</a>
+					<a target="blank" href="https://newslab.ru/news/905466" class="accidents region">В центре Красноярска пенсионер на кроссовере сбил пешехода, который медленно переходил дорогу (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904155" class="society region">Оркестр на траве, отключения воды, фильмы про выбор и лапшу: пятница в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/904105" class="society region">Самое интересное в Красноярске за 13 июня: дорогая вода, дорожный переворот и разбогатевший мэр</a>
+					<a target="blank" href="https://newslab.ru/news/904106" class="accidents region">В Октябрьском районе молодой водитель на «семерке» сбил ребенка во дворе жилого дома</a>
+					<a target="blank" href="https://newslab.ru/news/904104" class="politics region">Министру цифрового развития Красноярского края добавили еще одного зама. Это третье назначение с начала месяца</a>
+					<a target="blank" href="https://newslab.ru/news/904103" class="accidents region">Красноярские следователи и волонтеры тренировались искать «тело пропавшей девочки»</a>
+					<a target="blank" href="https://newslab.ru/news/904102" class="society russia">В России предложили сделать дипломы вузов электронными</a>
+					<a target="blank" href="https://newslab.ru/news/904101" class="society region">Богучанская ГЭС поддержала детский рыболовный фестиваль «Карасёнок»</a>
+					<a target="blank" href="https://newslab.ru/news/904100" class="society region">На Шахтеров запретят прямые повороты налево</a>
+					<a target="blank" href="https://newslab.ru/news/904099" class="society region">В пригороде Красноярска за раз нашли 6 несанкционированных свалок</a>
+					<a target="blank" href="https://newslab.ru/news/904098" class="society region">На Бограда в центре Красноярска на месяц меняют схему движения для ремонта сетей</a>
+					<a target="blank" href="https://newslab.ru/news/905465" class="society region">Жители красноярского Студгородка пожаловались на вонючие колодцы. Через месяц их начали приводить в порядок</a>
+					<a target="blank" href="https://newslab.ru/news/904097" class="society region">Двести красноярок пройдут по набережной города в красных платьях</a>
+					<a target="blank" href="https://newslab.ru/news/904072" class="accidents region">В полиции прокомментировали прогулку юного норильчанина по карнизу девятого этажа</a>
+					<a target="blank" href="https://newslab.ru/news/904070" class="society region">Красноярская учительница вновь подготовила рекордное количество стобалльников по химии</a>
+					<a target="blank" href="https://newslab.ru/news/904069" class="society region">Жители двух районов Красноярска на 9 дней останутся без горячей воды</a>
+					<a target="blank" href="https://newslab.ru/news/904068" class="accidents region">В пристройке частного дома в Красноярском крае обнаружили тела пожилой пары</a>
+					<a target="blank" href="https://newslab.ru/news/904067" class="society region">Красноярец пожаловался на владельцев пони и лошадей, которые поднимают их на вантовый мост в лифте</a>
+					<a target="blank" href="https://newslab.ru/news/904066" class="society region">Абитуриенты смогут подать документы на поступление в СФУ через выездную приемную комиссию</a>
+					<a target="blank" href="https://newslab.ru/news/904065" class="politics region">Мэр Красноярска Сергей Ерёмин удвоил свои доходы</a>
+					<a target="blank" href="https://newslab.ru/news/904064" class="accidents region">Бизнесмен из КНР предложил минусинскому фсбшнику 1,5 млн взятки и пойдет под суд (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904063" class="society region">В пятницу в двух районах Красноярска отключат холодную воду</a>
+					<a target="blank" href="https://newslab.ru/news/905464" class="accidents region">На красноярской трассе иномарка врезалась в грузовик на встречке: трое погибших (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904062" class="society region">Россияне готовы потратить миллион долларов на лечение и покупку жилья</a>
+					<a target="blank" href="https://newslab.ru/news/904061" class="accidents region">Врач футбольного «Енисея» спасла женщину во время полета</a>
+					<a target="blank" href="https://newslab.ru/news/904059" class="accidents region">«Вожу всегда много огнетушителей»: красноярец помог потушить загоревшийся автомобиль</a>
+					<a target="blank" href="https://newslab.ru/news/904071" class="sport region">В Красноярске стартовал первый всероссийский горняцкий турнир по мини-футболу</a>
+					<a target="blank" href="https://newslab.ru/news/904058" class="society region">Красноярские статистики назвали самые подорожавшие за год товары и услуги</a>
+					<a target="blank" href="https://newslab.ru/news/904057" class="accidents region">Норильский мальчик прогулялся по карнизу окна на 9 этаже и вызвал бурные споры в соцсетях (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904056" class="accidents region">Пожилой красноярец сбил школьника и уехал. Суд лишил прав</a>
+					<a target="blank" href="https://newslab.ru/news/904029" class="society region">«Хочу напомнить, что вы — люди»: красноярка осудила отдыхающих за кучи мусора на берегу популярного озера</a>
+					<a target="blank" href="https://newslab.ru/news/904028" class="accidents region">«Все в норме!»: специалисты проверили воздух в Богучанском районе, где больше суток полыхала промбаза</a>
+					<a target="blank" href="https://newslab.ru/news/904027" class="economy region">Красноярская ГЭС готова к прохождению грозового сезона</a>
+					<a target="blank" href="https://newslab.ru/news/905463" class="society region">У красноярских волонтеров-поисковиков появился свой офис</a>
+					<a target="blank" href="https://newslab.ru/news/904024" class="sport region">Пожилой красноярец устроил экстремальное «шоу» на Перьях и спустился со скалы вниз головой (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904023" class="accidents russia">В России водителей хотят проверять на наркотики прямо на дорогах</a>
+					<a target="blank" href="https://newslab.ru/news/902761" class="society region">Красноярцев пригласили на загородный гастрономический фестиваль</a>
+					<a target="blank" href="https://newslab.ru/news/904022" class="society region">Продукция сервисных предприятий СУЭК получила медали на отраслевой выставке «Уголь России и майнинг»</a>
+					<a target="blank" href="https://newslab.ru/news/904021" class="accidents region">Больше суток ушло на ликвидацию крупного пожара на промбазе с лесом в Богучанском районе</a>
+					<a target="blank" href="https://newslab.ru/news/904020" class="accidents region">На Воронова на ходу сгорела иномарка (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/904019" class="accidents region">Во время соревнований по альпинизму на «Столбах» со скалы упал мужчина</a>
+					<a target="blank" href="https://newslab.ru/news/903996" class="society region">Новые люди в чёрном, «прогулка» по Америке и турнир певцов: четверг в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/903918" class="accidents region">В Красноярском крае легковушка вылетела с трассы. В ДТП погиб 8-летний мальчик</a>
+					<a target="blank" href="https://newslab.ru/news/903893" class="culture region">Сразу два красноярских театра завершат сезон премьерами</a>
+					<a target="blank" href="https://newslab.ru/news/905543" class="culture region">Красноярский художник за ночь расписал здание бара в центре</a>
+					<a target="blank" href="https://newslab.ru/news/905462" class="accidents siberia">Осужденный за гибель красноярских байкерш экс-глава ГИБДД Кузбасса попросил об УДО</a>
+					<a target="blank" href="https://newslab.ru/news/903892" class="economy region">В Красноярске в несколько раз подорожало социальное такси</a>
+					<a target="blank" href="https://newslab.ru/news/903867" class="society region">«Официантов тут нет»: сотрудники «Гремячей гривы» пожаловались на мусорящих туристов (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/903866" class="accidents region">Бывшего директора «Реставрации» требуют признать банкротом</a>
+					<a target="blank" href="https://newslab.ru/news/903864" class="accidents region">В Железногорске под видом комиссионки выдавали микрозаймы</a>
+					<a target="blank" href="https://newslab.ru/news/903863" class="accidents region">В Богучанском районе из-за пожара на базе с лесом чуть не сгорел жилой поселок</a>
+					<a target="blank" href="https://newslab.ru/news/903697" class="society region">Восьмичасовой концерт, бесплатные выставки и фестиваль на Татышеве: День России и День города в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/903740" class="society region">Самое интересное в Красноярске за 11 июня: «подземный» сквер, первые стобалльники и новые правила на мосту</a>
+					<a target="blank" href="https://newslab.ru/news/903741" class="society region">Красноярск вошёл в топ-5 городов-миллионников с самым большим чеком бесконтактной оплаты</a>
+					<a target="blank" href="https://newslab.ru/news/903739" class="politics russia">Красноярский высокопоставленный прокурор возглавил прокуратуру самого большого региона России</a>
+					<a target="blank" href="https://newslab.ru/news/903738" class="society siberia">Красноярские стройотрядовцы строят первый автобан Сибири. Он находится не в Красноярском крае</a>
+					<a target="blank" href="https://newslab.ru/news/905357" class="economy siberia">Банк «Акцепт» вошел в число лучших предприятий Новосибирска в сфере оказания услуг</a>
+					<a target="blank" href="https://newslab.ru/news/903737" class="society region">На выезде из Красноярска в очередной раз меняют схему движения</a>
+					<a target="blank" href="https://newslab.ru/news/903736" class="society russia">В России отложили введение «нештрафуемого порога» до 10 км/ч</a>
+					<a target="blank" href="https://newslab.ru/news/903735" class="society region">На правобережье Красноярска высадили яблоневые аллеи</a>
+					<a target="blank" href="https://newslab.ru/news/903734" class="society region">В Красноярске потеплеет и испортится воздух</a>
+					<a target="blank" href="https://newslab.ru/news/903732" class="region">Уроженец Красноярского края в Калуге получил большой кредит по чужим документам. Поймали при попытке повторить</a>
+					<a target="blank" href="https://newslab.ru/news/903705" class="society region">В Красноярске наградили победителей студенческого конкурса «Хрустальный апельсин»</a>
+					<a target="blank" href="https://newslab.ru/news/903731" class="economy region">В Красноярске впервые пройдет сибирский бизнес-форум</a>
+					<a target="blank" href="https://newslab.ru/news/903730" class="accidents region">В Красноярском крае начальник лесничества может 4 года провести в тюрьме за «выдуманных» подчинённых</a>
+					<a target="blank" href="https://newslab.ru/news/903704" class="society region">В июне красноярский Поезд здоровья посетит три сибирских региона</a>
+					<a target="blank" href="https://newslab.ru/news/903703" class="accidents region">В праздничную среду за красноярскими водителями тайно проследят скрытые патрули</a>
+					<a target="blank" href="https://newslab.ru/news/905324" class="society region">«Сибагропромстрой» подарит кладовую комнату при покупке квартиры</a>
+					<a target="blank" href="https://newslab.ru/news/903702" class="society russia">Роспотребнадзор предложил запретить уничтожение продуктов</a>
+					<a target="blank" href="https://newslab.ru/news/903701" class="society region">Спикер Законодательного Собрания встретился с жителями Таймыра</a>
+					<a target="blank" href="https://newslab.ru/news/903699" class="economy region">Красноярская ГЭС успешно прошла обследование комплекса ГТС</a>
+					<a target="blank" href="https://newslab.ru/news/903696" class="society region">В Красноярске появились еще два поста наблюдения за экологией</a>
+					<a target="blank" href="https://newslab.ru/news/903695" class="accidents region">«12-летнюю девочку спасали сверстницы и взрослые»: стали известны новые обстоятельства гибели красноярки при попытке переплыть Енисей</a>
+					<a target="blank" href="https://newslab.ru/news/903694" class="accidents region">Красноярские приставы вместе с гаишниками начали ловить должников на выездах из города (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/903661" class="society region">Уполномоченный партнер Toyota в Красноярске только в июне предлагает внедорожники с выгодой до 575 тысяч рублей</a>
+					<a target="blank" href="https://newslab.ru/news/903693" class="accidents region">В Солнечном столкнулись два ВАЗа. Водители уехали с места происшествия на скорой</a>
+					<a target="blank" href="https://newslab.ru/news/903692" class="sport region">В Красноярске состоялись игры 7-го тура Лиги чемпионов бизнеса</a>
+					<a target="blank" href="https://newslab.ru/news/903691" class="society region">В Красноярске заказали проект ремонта правобережной набережной от Торгового центра</a>
+					<a target="blank" href="https://newslab.ru/news/905461" class="society region">На выходных в Красноярске снова поменяется погода</a>
+					<a target="blank" href="https://newslab.ru/news/903690" class="society region">«Давай-давай, родной!»: норильчане спасли увязшего в снегу оленя (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/903689" class="economy region">Красноярскому полку ДПС подарили четыре новых немецких мотоцикла</a>
+					<a target="blank" href="https://newslab.ru/news/903687" class="accidents region">Водитель встретил медведя на трассе в Красноярском крае (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/903660" class="society region">Красноярские мужчины заявили о нежелании создавать семью с курящими женщинами. Но дружить не против</a>
+					<a target="blank" href="https://newslab.ru/news/903659" class="society russia">Изменился порядок запрета вывоза детей из России</a>
+					<a target="blank" href="https://newslab.ru/news/903657" class="society region">Красноярские медики научились восстанавливать сердечный клапан пациента из его же тканей</a>
+					<a target="blank" href="https://newslab.ru/news/903656" class="accidents region">В Октябрьском районе Красноярска воришка залез в открытое окно квартиры и украл документы хозяев</a>
+					<a target="blank" href="https://newslab.ru/news/903655" class="accidents region">Сквер «Добрый» в Красноярске уходит под землю после первых дождей</a>
+					<a target="blank" href="https://newslab.ru/news/903654" class="society region">Большинство пойманных в Красноярском крае клещей могли заразить людей боррелиозом</a>
+					<a target="blank" href="https://newslab.ru/news/903653" class="sport russia">Спортсмен Вик Уайлд может вернуться в США из-за конфликта с медиками</a>
+					<a target="blank" href="https://newslab.ru/news/905460" class="society region">После жалобы красноярки Путину губернатор и мэр приехали в проблемный район Солнечного и пообещали сквер</a>
+					<a target="blank" href="https://newslab.ru/news/903652" class="society region">Для празднования Дня России в центре Красноярске вводят ограничения для транспорта</a>
+					<a target="blank" href="https://newslab.ru/news/903651" class="accidents region">12-летняя девочка утонула возле красноярского моста «777»</a>
+					<a target="blank" href="https://newslab.ru/news/903650" class="accidents region">В Красноярском крае резко увеличилась площадь лесных пожаров</a>
+					<a target="blank" href="https://newslab.ru/news/903510" class="economy region">Клиенты банка «Открытие» могут получить до 100 тысяч рублей кешбэка</a>
+					<a target="blank" href="https://newslab.ru/news/903649" class="society region">Фонд «СУЭК-РЕГИОНАМ» запустил в Красноярске летний сезон программы «Лыжи мечты»</a>
+					<a target="blank" href="https://newslab.ru/news/903648" class="society region">В Красноярском крае обнародовали результаты ЕГЭ по трем предметам. Рекордное количество 100-балльников насчитали на экзамене по литературе</a>
+					<a target="blank" href="https://newslab.ru/news/903623" class="society region">«Норникель» и Росрыболовство подписали соглашение о взаимодействии в сфере экологии</a>
+					<a target="blank" href="https://newslab.ru/news/903647" class="society region">Суд поддержал запрет мэрии на строительство дома в Березовой роще Студгородка</a>
+					<a target="blank" href="https://newslab.ru/news/902842" class="society region">Пока одни дети играют в компьютерные игры, другие создают их сами: чем занять ребенка летом в городе</a>
+					<a target="blank" href="https://newslab.ru/news/903646" class="society region">На вантовый мост после четырех дней запрета вернули велосипеды</a>
+					<a target="blank" href="https://newslab.ru/news/905389" class="society region">Амфибрахий на траве, день рождения Цоя и дитя робота: пятница в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/903546" class="society region">Банк «Акцепт» запустил специальное предложение по автокредиту</a>
+					<a target="blank" href="https://newslab.ru/news/903574" class="society region">Интеллектуальный день, фейковая жизнь и «красное» прошлое: вторник в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/903540" class="society region">Самое интересное в Красноярске за 10 июня: боль на Татышеве, прирост населения и «скверная» история</a>
+					<a target="blank" href="https://newslab.ru/news/903549" class="society russia">Россиянам могут запретить держать слишком много кошек и собак в квартирах</a>
+					<a target="blank" href="https://newslab.ru/news/903548" class="society region">Впервые за долгое время синоптики порадовали красноярцев прогнозом очищения воздуха</a>
+					<a target="blank" href="https://newslab.ru/news/903547" class="society region">Мэрия Красноярска отчиталась о ремонте дорог и рассказала о грядущих перекрытиях</a>
+					<a target="blank" href="https://newslab.ru/news/903543" class="politics region">В Канске двух депутатов лишили полномочий за сокрытие доходов и имущества жён</a>
+					<a target="blank" href="https://newslab.ru/news/903496" class="society region">«Наша продукция будет на завтраке у каждой семьи»: компания «Командор» открыла первый хлебобулочный завод</a>
+					<a target="blank" href="https://newslab.ru/news/903542" class="society region">Богучанская ГЭС помогла обновить книжный фонд районной библиотеки</a>
+					<a target="blank" href="https://newslab.ru/news/903539" class="accidents region">После жестокого избиения красноярской школьницы следователи возбудили уголовное дело о вымогательстве</a>
+					<a target="blank" href="https://newslab.ru/news/905361" class="society region">Самое интересное в Красноярске за 20 июня: сомнения хитрых чиновников, новые правила для выделенок и звонок Путину</a>
+					<a target="blank" href="https://newslab.ru/news/903514" class="society region">Дети присоединились к акции «оБЕРЕГАй» и собрали на озере Мясокомбината 100 мешков с мусором</a>
+					<a target="blank" href="https://newslab.ru/news/903509" class="society region">Во время диспансеризации у каждого сотого россиянина выявили рак</a>
+					<a target="blank" href="https://newslab.ru/news/903508" class="society region">«Боремся с хулиганством и ссорами»: красноярская школа вернулась к традиции раздельного обучения мальчиков и девочек</a>
+					<a target="blank" href="https://newslab.ru/news/903505" class="accidents region">На севере Красноярского края подростки в масках и с ножом совершили разбойное нападение на мужчину</a>
+					<a target="blank" href="https://newslab.ru/news/903502" class="accidents region">Житель края знал об уловках мошенников, но все равно поверил им и лишился 200 тысяч</a>
+					<a target="blank" href="https://newslab.ru/news/903501" class="accidents region">Прокуратура назвала окончательную причину массовой гибели птиц на красноярском Татышеве</a>
+					<a target="blank" href="https://newslab.ru/news/903500" class="society region">Впервые за долгое время численность населения Красноярского края выросла</a>
+					<a target="blank" href="https://newslab.ru/news/903499" class="society region">Красноярских росгвардейцев признали лучшими в России и подарили им автомобиль</a>
+					<a target="blank" href="https://newslab.ru/news/903498" class="politics region">В Красноярском крае назначили нового министра здравоохранения</a>
+					<a target="blank" href="https://newslab.ru/news/903497" class="accidents region">Полицейские наказали красноярского маршрутчика за перегороженную дорогу и драку с коллегой</a>
+					<a target="blank" href="https://newslab.ru/news/905363" class="society russia">Красноярка дозвонилась на «прямую линию» к президенту и пожаловалась на застройку (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/903495" class="accidents region">В Лесосибирске полиция отобрала у наркосбытчиков почти килограмм «синтетики»</a>
+					<a target="blank" href="https://newslab.ru/news/903456" class="economy russia">«Норникель» поделился опытом успешных практик в сфере социальной ответственности</a>
+					<a target="blank" href="https://newslab.ru/news/903470" class="society region">В сквере на Алексеева высадили 150 саженцев сирени</a>
+					<a target="blank" href="https://newslab.ru/news/903469" class="accidents region">Красноярцы толкали заглохшую машину и повредили еще две (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/903468" class="culture region">Шести городам и селам в Красноярском крае дадут денег на новые кинотеатры за показ отечественных фильмов</a>
+					<a target="blank" href="https://newslab.ru/news/903467" class="society region">На правобережье Красноярска разрушили созданный год назад сквер (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/903465" class="accidents Тува">Тувинец сумел отбиться от медведя и откусил ему язык</a>
+					<a target="blank" href="https://newslab.ru/news/903464" class="accidents region">Житель Красноярского края устроил пальбу на улице и получил крупный штраф</a>
+					<a target="blank" href="https://newslab.ru/news/903463" class="accidents region">«Это оказывается в лёгких каждого жителя»: красноярцы обсуждают разводы на стеклах машин после «кислотного» дождя</a>
+					<a target="blank" href="https://newslab.ru/news/903431" class="sport russia">«Норникель» рассказал о роли корпоративного спорта в рамках Петербургского международного экономического форума</a>
+					<a target="blank" href="https://newslab.ru/news/905360" class="society region">«Это уже реальная угроза»: для бездомных собак в Красноярске хотят построить приют</a>
+					<a target="blank" href="https://newslab.ru/news/903462" class="accidents region">Турист сломал ногу на одной из самых опасных скал красноярских «Столбов»</a>
+					<a target="blank" href="https://newslab.ru/news/903461" class="society region">СУЭК проведет в Красноярске всероссийский горняцкий турнир по мини-футболу</a>
+					<a target="blank" href="https://newslab.ru/news/903460" class="accidents region">Участница красноярского чемпионата по ношению жен разбила голову на полосе препятствий (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/903459" class="society region">Студентка СибГУ им. Решетнева стала лучшей на мировых IT-соревнованиях</a>
+					<a target="blank" href="https://newslab.ru/news/903458" class="society region">На неделе в Красноярске ожидается переменчивая погода. Но летняя</a>
+					<a target="blank" href="https://newslab.ru/news/903457" class="society russia">Красноярцев ждет дополнительный выходной посреди недели</a>
+					<a target="blank" href="https://newslab.ru/news/902759" class="society region">Красноярцы могут заказать мультибрендовую обувь с доставкой на дом</a>
+					<a target="blank" href="https://newslab.ru/news/903429" class="society region">Утренняя зарядка, скандальная любовь и Владимир Винокур: понедельник в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/903307" class="society region">Владимир Путин поручил правительству заняться развитием Минусинской долины</a>
+					<a target="blank" href="https://newslab.ru/news/903306" class="accidents region">Труп женщины достали из Енисея у Речного вокзала Красноярска</a>
+					<a target="blank" href="https://newslab.ru/news/905359" class="accidents siberia">Против напавшего на журналиста чиновника из Хакасии возбудили новое уголовное дело</a>
+					<a target="blank" href="https://newslab.ru/news/903305" class="accidents region">Канскую учительницу за разврат отправили в психбольницу</a>
+					<a target="blank" href="https://newslab.ru/news/903201" class="accidents region">В Красноярске по подозрению в мошенничестве задержали депутата краевого парламента (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/903200" class="accidents region">Директор красноярской турфирмы украла несколько миллионов и сбежала в Индонезию. Дело дошло до суда</a>
+					<a target="blank" href="https://newslab.ru/news/903175" class="accidents region">Дорожные полицейские с воздуха следили за нарушителями на красноярских трассах</a>
+					<a target="blank" href="https://newslab.ru/news/903150" class="accidents region">Красноярские полицейские не пустили в Киргизию автобус с разными колесами и неисправными тормозами</a>
+					<a target="blank" href="https://newslab.ru/news/903149" class="accidents region">Катер с путешественниками сломался в популярном у туристов заливе Красноярского водохранилища</a>
+					<a target="blank" href="https://newslab.ru/news/903148" class="society region">Праздник на Татышеве с утра до ночи, концерты Басты и «Яхонта», салют: выходные в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/903046" class="society region">Самое интересное в Красноярске за 7 июня: свободная выделенка и много шума из-за дыма</a>
+					<a target="blank" href="https://newslab.ru/news/903047" class="society region">На берегу красноярской Качи поработал экологический десант</a>
+					<a target="blank" href="https://newslab.ru/news/903045" class="accidents region">Полицейские оштрафовали молодого водителя Lexus за катание по вантовому мосту</a>
+					<a target="blank" href="https://newslab.ru/news/905516" class="society region">В «популярном» дворе Железнодорожного района установили дог-боксы</a>
+					<a target="blank" href="https://newslab.ru/news/905358" class="accidents region">В Красноярском крае «черные лесорубы» и помогавшая им сотрудник полиции попали под следствие</a>
+					<a target="blank" href="https://newslab.ru/news/903044" class="society region">«Будет работать эвакуатор»: ГИБДД просит водителей правильно останавливаться на Октябрьском мосту (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/903043" class="society region">Запрет велосипедов на мосту до Татышева разозлил красноярцев: создали петицию</a>
+					<a target="blank" href="https://newslab.ru/news/903042" class="society region">В Красноярске торжественным молебном открылась ежегодная выставка-ярмарка «Сибирь православная»</a>
+					<a target="blank" href="https://newslab.ru/news/903041" class="accidents region">«С топором гонялся по ограде»: в Красноярском крае молодого мужчину осудят за массовое убийство</a>
+					<a target="blank" href="https://newslab.ru/news/903040" class="accidents region">В тёплые выходные в Красноярске устроят массовую облаву на пьяных водителей. Особая проверка ждет дачников и отправляющихся на озёра</a>
+					<a target="blank" href="https://newslab.ru/news/903039" class="economy region">Красноярскую сельхозпродукцию планируют продавать на бирже</a>
+					<a target="blank" href="https://newslab.ru/news/903038" class="society region">В России вырастет материнский капитал</a>
+					<a target="blank" href="https://newslab.ru/news/903013" class="society region">«КрасКом» признали самым ответственным работодателем в сфере ЖКХ</a>
+					<a target="blank" href="https://newslab.ru/news/903012" class="society region">В День России красноярские электрички поменяют расписание</a>
+					<a target="blank" href="https://newslab.ru/news/903011" class="economy region">Экспорт красноярских продуктов к 2024 году увеличится в 2,5 раза</a>
+					<a target="blank" href="https://newslab.ru/news/905356" class="society region">«Мы хотели привлечь внимание»: в мэрии рассказали о дальнейшей судьбе крематория в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/903010" class="economy region">Красноярский край станет пилотной площадкой по внедрению технологий дистанционного зондирования Земли</a>
+					<a target="blank" href="https://newslab.ru/news/903009" class="society region">У редких крохотных обезьянок из красноярского зоопарка появилось потомство</a>
+					<a target="blank" href="https://newslab.ru/news/903008" class="society region">Эксперт: на проспекте Мира в Красноярске погибло 72 % новых деревьев</a>
+					<a target="blank" href="https://newslab.ru/news/903006" class="society region">СУЭК поблагодарили за вклад в проведение Универсиады и развитие Красноярска</a>
+					<a target="blank" href="https://newslab.ru/news/903005" class="society region">Автобусы до аэропорта Красноярска начали ходить по новому расписанию</a>
+					<a target="blank" href="https://newslab.ru/news/903004" class="accidents region">В Красноярске «пенсионные мошенники» пообещали ветерану войны доплату к пенсии и лишили ее денег</a>
+					<a target="blank" href="https://newslab.ru/news/903003" class="society region">На Мичурина поменяют 33-летнюю теплосеть</a>
+					<a target="blank" href="https://newslab.ru/news/903002" class="society region">Предприятия СГК стали лучшими по охране труда в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/903000" class="sport region">«Будет всегда пустовать»: красноярцы обсуждают новую площадку для спорта и отдыха на окраине города</a>
+					<a target="blank" href="https://newslab.ru/news/902999" class="society region">Красноярцев позвали на бесплатный мастер-класс по испанскому языку</a>
+					<a target="blank" href="https://newslab.ru/news/905355" class="society russia">В России приняли закон о компенсации ипотеки многодетным семьям</a>
+					<a target="blank" href="https://newslab.ru/news/902997" class="society russia">Красноярская школьница создала органайзер для швейных принадлежностей и победила с ним на Всероссийском конкурсе</a>
+					<a target="blank" href="https://newslab.ru/news/902996" class="society region">Семья сотрудницы СУЭК стала лучшей в Красноярском крае</a>
+					<a target="blank" href="https://newslab.ru/news/902995" class="society region">В Саяногорске открылся корпоративный детский лагерь РУСАЛа</a>
+					<a target="blank" href="https://newslab.ru/news/902992" class="accidents region">В Красноярске школьники жестоко избили 14-летнюю гимназистку. К делу подключилась полиция и следователи (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902991" class="economy region">Аэроэкспресс в Красноярске могут сделать по примеру Германии</a>
+					<a target="blank" href="https://newslab.ru/news/902925" class="economy russia">«Норникель», IBM и МФТИ будут готовить блокчейн-специалистов</a>
+					<a target="blank" href="https://newslab.ru/news/902966" class="accidents region">Красноярский осужденный угрожал судье расправой молотком и может получить новый срок</a>
+					<a target="blank" href="https://newslab.ru/news/902965" class="society region">Красноярцев в субботу удивят фейерверком-подарком</a>
+					<a target="blank" href="https://newslab.ru/news/902964" class="economy region">«Связь с ближним зарубежьем и восточное направление»: краевые депутаты обсудили развитие красноярского аэропорта</a>
+					<a target="blank" href="https://newslab.ru/news/902963" class="society region">Городовые рассказали о первых оштрафованных кальянщиках с красноярской набережной</a>
+					<a target="blank" href="https://newslab.ru/news/905330" class="society region">Прокуратура Красноярска уличила мэрию в недостаточном информирования горожан о застройке Перенсона</a>
+					<a target="blank" href="https://newslab.ru/news/902962" class="accidents region">Красноярцу стало плохо после аварии с ребенком и он уехал с места ДТП. Отправится под арест (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902961" class="society region">Ради заграничного отпуска жительница края оплатила долг за услуги ЖКХ</a>
+					<a target="blank" href="https://newslab.ru/news/902959" class="accidents region">В Центральном парке Красноярска ночью загорелся гараж. Подозревают поджог</a>
+					<a target="blank" href="https://newslab.ru/news/902958" class="society region">Автомобилистам разрешат ездить по выделенкам в центре Красноярска и Советском районе</a>
+					<a target="blank" href="https://newslab.ru/news/902924" class="economy russia">«Норникель» и SAP будут разрабатывать IT-решения для промышленных отраслей</a>
+					<a target="blank" href="https://newslab.ru/news/902956" class="accidents region">В Красноярске на глазах у полицейских по пешеходному мосту проехал Lexus (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902955" class="accidents region">«Не знаю, как высыпаться»: жительница Дубровинского пожаловалась на сборище кальянщиков под окнами (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902957" class="economy region">Ускоряя цифровизацию Сибири: МРСК и МегаФон запустят совместные проекты развития технологий</a>
+					<a target="blank" href="https://newslab.ru/news/902954" class="society region">В Бородино стартовал юбилейный сезон трудовых отрядов СУЭК</a>
+					<a target="blank" href="https://newslab.ru/news/902953" class="economy region">В Красноярском крае завершается посевная кампания</a>
+					<a target="blank" href="https://newslab.ru/news/905329" class="accidents region">Суд незаконно смягчил опасному преступнику наказание: в дело вмешалась прокуратура и добилась справедливости</a>
+					<a target="blank" href="https://newslab.ru/news/902951" class="accidents region">Житель края жестоко избил парня и сбежал. Пострадавший на 8 месяцев потерял память и не мог описать приметы преступника</a>
+					<a target="blank" href="https://newslab.ru/news/902952" class="economy region">«Нас ждут великие открытия и масштабные проекты»: Игорь Сечин рассказал о реализации инвестпроектов по нефтедобыче в Красноярском крае</a>
+					<a target="blank" href="https://newslab.ru/news/902950" class="society region">Красноярских жирафов выпустили на улицу</a>
+					<a target="blank" href="https://newslab.ru/news/902923" class="economy region">Tele2 инвестирует в экономику Красноярского края миллиард рублей</a>
+					<a target="blank" href="https://newslab.ru/news/902949" class="society region">Красноярцам обещают грозу и тёплые выходные</a>
+					<a target="blank" href="https://newslab.ru/news/902921" class="society region">Торжество на Караульной горе, странные затворники и open-air: пятница в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/902844" class="society region">Самое интересное в Красноярске за 6 июня: бойкот дымному рейву, неряшливый парк и сомнения мэрии</a>
+					<a target="blank" href="https://newslab.ru/news/902847" class="economy region">Красноярский край будет работать с фондом «Сколково»</a>
+					<a target="blank" href="https://newslab.ru/news/902848" class="society region">Губернатор Красноярского края Александр Усс работает на Петербургском международном экономическом форуме</a>
+					<a target="blank" href="https://newslab.ru/news/902846" class="society region">Под Красноярском ремонтируют важную дорогу</a>
+					<a target="blank" href="https://newslab.ru/news/905328" class="society region">Красноярским водителям напомнили об изменении работы выделенных полос</a>
+					<a target="blank" href="https://newslab.ru/news/902843" class="society region">Красноярские дачники и инспекторы «Столбов» показали свои встречи с медведями (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902841" class="society region">Красноярские автоледи-блондинки рассказали о безопасности на железнодорожных переездах (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902840" class="sport region">На красноярском вантовом мосту появились новые знаки и разметка. Теперь по нему нельзя ездить на велосипеде</a>
+					<a target="blank" href="https://newslab.ru/news/902839" class="society region">В Центральном парке Красноярска снесут 74 постройки</a>
+					<a target="blank" href="https://newslab.ru/news/902838" class="accidents region">Двое красноярцев хотели открыть в Лесосибирске наркобизнес. Их поймали на въезде в город (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902619" class="society region">Красноярцы смогут задать вопросы теплоэнергетикам через интернет-приемную Newslab</a>
+					<a target="blank" href="https://newslab.ru/news/902813" class="accidents region">Красноярские следователи раскрыли подробности вооружённого ограбления с погоней</a>
+					<a target="blank" href="https://newslab.ru/news/902811" class="accidents region">Красноярского полицейского начальника уличили в подделке документов и незаконном хранении боеприпасов</a>
+					<a target="blank" href="https://newslab.ru/news/902810" class="society region">Стали известны предварительные сроки строительства красноярского крематория</a>
+					<a target="blank" href="https://newslab.ru/news/902809" class="society region">Главные святыни Сибири привезли в Красноярск на православную выставку</a>
+					<a target="blank" href="https://newslab.ru/news/905327" class="society region">«Это жизненная необходимость»: мэрия проверила ремонт старых дворов в центре Красноярска</a>
+					<a target="blank" href="https://newslab.ru/news/902807" class="society region">В мэрии Красноярска оценили шансы возвращения трамваев на Коммунальный мост</a>
+					<a target="blank" href="https://newslab.ru/news/902806" class="society region">Две улицы правобережья Красноярска обещают сделать очень удобными для пешеходов</a>
+					<a target="blank" href="https://newslab.ru/news/902805" class="society region">«Резиновый мяч и поход в пиццерию»: красноярские волонтеры рассказали о мечтах детей с тяжелыми заболеваниями</a>
+					<a target="blank" href="https://newslab.ru/news/902804" class="society region">Красноярскую сеть «Мясничий» официально признали лучшим магазином страны</a>
+					<a target="blank" href="https://newslab.ru/news/902803" class="accidents region">При попытке продать квартиру пенсионерка из Норильска лишилась 170 тысяч</a>
+					<a target="blank" href="https://newslab.ru/news/902802" class="society region">Власти Красноярска попросили помощи в борьбе с кальянщиками на набережной Енисея</a>
+					<a target="blank" href="https://newslab.ru/news/902800" class="society region">«Комиссия выезжала несколько раз!»: чиновники назвали причины закрытия красноярского детского лагеря</a>
+					<a target="blank" href="https://newslab.ru/news/902798" class="society region">«Вы феи добра»: мэр Сергей Еремин поблагодарил лучших соцработников города</a>
+					<a target="blank" href="https://newslab.ru/news/902799" class="society region">В конце недели в парке имени Гагарина Красноярска заработает новый открытый бассейн</a>
+					<a target="blank" href="https://newslab.ru/news/902773" class="society region">В День города в Красноярске не будут выпускать в небо традиционные воздушные шары</a>
+					<a target="blank" href="https://newslab.ru/news/905318" class="society region">ВСНК в честь своего 25-летия устроила детский праздник в Эвенкии</a>
+					<a target="blank" href="https://newslab.ru/news/902772" class="society region">«Погибло не более 5 %»: в мэрии подвели первые итоги инспекции прошлогодних посадок</a>
+					<a target="blank" href="https://newslab.ru/news/902771" class="society region">У красноярского алиментщика арестовали иномарку и отправили работать в «скорую помощь» (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902770" class="society region">В Красноярске пройдет Сибирская конференция по корпоративному волонтерству</a>
+					<a target="blank" href="https://newslab.ru/news/902766" class="society region">«Нам просто не дают работать»: в Красноярске закрыли популярный летний лагерь</a>
+					<a target="blank" href="https://newslab.ru/news/902765" class="culture region">Красноярцам рассказали новые факты из биографии убитого более 100 лет назад городского полицмейстера</a>
+					<a target="blank" href="https://newslab.ru/news/902764" class="society region">В Красноярске будут искать все портящие воздух автобусы</a>
+					<a target="blank" href="https://newslab.ru/news/902763" class="culture region">В Красноярске впервые пройдет театральный фестиваль «Любимовка»</a>
+					<a target="blank" href="https://newslab.ru/news/902758" class="accidents region">В Красноярске начал портиться воздух</a>
+					<a target="blank" href="https://newslab.ru/news/902757" class="society region">В Удачном подсветили Успенский монастырь</a>
+					<a target="blank" href="https://newslab.ru/news/902756" class="accidents siberia">Уехавшего к отцу автостопом из Кемерово 13-летнего школьника нашли в Красноярске. Они так и не встретились</a>
+					<a target="blank" href="https://newslab.ru/news/905326" class="accidents region">Сбитая лесосибирским мотоциклистом 10-летняя девочка скончалась в больнице</a>
+					<a target="blank" href="https://newslab.ru/news/902769" class="society region">500 тысяч сосен высажены в Красноярском крае по проекту РУСАЛа «Под зелёным крылом»</a>
+					<a target="blank" href="https://newslab.ru/news/902733" class="society region">Сложный выбор мутантов, вечер Пушкина и зумба: четверг в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/902684" class="society region">Стали известны результаты конкурса на лучший проект крематория в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/902659" class="society region">Самое интересное в Красноярске за 5 июня: окна в решётках, дороги в «вафельницах» и пустующее кресло министра</a>
+					<a target="blank" href="https://newslab.ru/news/902658" class="accidents region">Догадливые красноярские следователи получили премию от руководства за быстрый поиск сбежавшего подростка</a>
+					<a target="blank" href="https://newslab.ru/news/902657" class="society region">Красноярский минздрав опроверг информацию о проблемах с инсулином</a>
+					<a target="blank" href="https://newslab.ru/news/902655" class="society region">Красноярский депутат просит наказать жену экс-губернатора за фейковые новости</a>
+					<a target="blank" href="https://newslab.ru/news/902653" class="accidents region">В Черемушках ищут женщину с синими волосами и тремя маленькими детьми</a>
+					<a target="blank" href="https://newslab.ru/news/902652" class="society region">СФУ вошел в топ-20 лучших вузов по подготовке IT-специалистов</a>
+					<a target="blank" href="https://newslab.ru/news/902651" class="society region">«Ростелеком» и МЧС провели в Красноярске учения по гражданской обороне</a>
+					<a target="blank" href="https://newslab.ru/news/905325" class="economy region">ВТБ в Красноярском крае кредитует «Красноярскнефтепродукт»</a>
+					<a target="blank" href="https://newslab.ru/news/902650" class="society region">Красноярский край возглавил пятёрку грязнейших регионов России</a>
+					<a target="blank" href="https://newslab.ru/news/902649" class="accidents region">В Красноярском крае машина с 5-месячным ребенком слетела в кювет. У девочки перелом черепа</a>
+					<a target="blank" href="https://newslab.ru/news/902648" class="society">Сотрудники «Красноярскэнергосбыта» в рамках донорского марафона сдали почти 50 литров крови</a>
+					<a target="blank" href="https://newslab.ru/news/902647" class="society region">Красноярцев просят высказаться о запрете каршеринга для злостных нарушителей ПДД</a>
+					<a target="blank" href="https://newslab.ru/news/902646" class="economy region">Банк из Татарстана заставили заплатить за незаконное использование земли в Красноярске. Бюджет получил 1,5 миллиона рублей</a>
+					<a target="blank" href="https://newslab.ru/news/902621" class="society region">Красноярцы поддержали открытие вытрезвителей</a>
+					<a target="blank" href="https://newslab.ru/news/902620" class="accidents region">В Черемушках беспечный школьник выбежал на дорогу и попал под колеса иномарки (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902617" class="society region">На «Летнюю ярмарку» в Красноярск привезут продукты Кубани, Камчатки и Беларуси</a>
+					<a target="blank" href="https://newslab.ru/news/902616" class="sport region">«Coca-Cola разгромила Danone»: в Красноярске завершился 6-й тур Лиги чемпионов бизнеса</a>
+					<a target="blank" href="https://newslab.ru/news/902615" class="accidents region">Известный ювелирный эксперт продал долю в красноярской компании за 50 тысяч. Хочет в 1000 раз больше</a>
+					<a target="blank" href="https://newslab.ru/news/905518" class="society region">Из центра Красноярска убрали светящиеся деревья</a>
+					<a target="blank" href="https://newslab.ru/news/905323" class="society region">Городовые назвали позорным дешёвый супермаркет Красноярска</a>
+					<a target="blank" href="https://newslab.ru/news/902614" class="economy region">Национальный лесной форум и международная выставка «Эксподрев»: в Красноярске готовятся к главным событиям года в ЛПК</a>
+					<a target="blank" href="https://newslab.ru/news/902613" class="economy russia">ВТБ и Первый ОФД предлагают комплексный продукт для малого и среднего бизнеса</a>
+					<a target="blank" href="https://newslab.ru/news/902610" class="society region">Красноярская служба «005» модернизировала сайт. Он по-прежнему не принимает заявки при авариях</a>
+					<a target="blank" href="https://newslab.ru/news/902609" class="accidents region">Красноярская полиция агитирует за установку решеток на первых этажах жилых домов</a>
+					<a target="blank" href="https://newslab.ru/news/902607" class="economy region">Клиенты банка «Открытие» теперь могут снимать наличные в банкоматах СКБ-банка в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/902606" class="society region">Зеленогорский ЭХЗ поддержал регбистов сборной команды «Восток»</a>
+					<a target="blank" href="https://newslab.ru/news/902605" class="society region">Красноярским рекламным щитам и баннерам хотят раздать штрихкоды</a>
+					<a target="blank" href="https://newslab.ru/news/902604" class="accidents region">«Тушили из огородных шлангов»: красноярские пожарные спасли от огня дом и получили претензии за сгоревшую баню (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902603" class="society region">В центре Красноярска появилась еще одна разметка-«вафельница»</a>
+					<a target="blank" href="https://newslab.ru/news/902602" class="accidents region">Ачинская пенсионерка попыталась продать дом и осталась без денег</a>
+					<a target="blank" href="https://newslab.ru/news/905322" class="accidents region">Красноярские полицейские на велосипедах меняют дислокацию: проследят за горожанами в популярном парке</a>
+					<a target="blank" href="https://newslab.ru/news/902601" class="sport region">Красноярские футболисты «Тотема» сыграли в финале турнира «Будущее зависит от тебя»</a>
+					<a target="blank" href="https://newslab.ru/news/902654" class="society region">В СФУ разработали самый полезный в быту спецкурс</a>
+					<a target="blank" href="https://newslab.ru/news/902575" class="society region">СУЭК запустила в шахтерских городах края программы озеленения и благоустройства</a>
+					<a target="blank" href="https://newslab.ru/news/902574" class="culture region">«Оркестр на траве» впервые пройдет сразу в трех городах Красноярского края</a>
+					<a target="blank" href="https://newslab.ru/news/902573" class="society region">Жительница Сосновоборска потеряла ногу и засудила врачей за неправильное лечение</a>
+					<a target="blank" href="https://newslab.ru/news/902572" class="society region">Красноярцы смогут купить билеты на самые популярные поезда со скидкой 50 %</a>
+					<a target="blank" href="https://newslab.ru/news/902571" class="economy region">Сотрудники Богучанской ГЭС вошли в кадровый резерв «Лидеров Енисейской Сибири»</a>
+					<a target="blank" href="https://newslab.ru/news/902570" class="society region">На красноярском кинотеатре отмыли барельеф с революционеркой (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902569" class="accidents region">Красноярская автоледи уехала с места незначительного ДТП с участием дедушки-пешехода. Теперь ее ищут (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902568" class="economy region">На поддержку красноярских фермеров и развитие сельской кооперации в крае потратят почти 130 млн рублей</a>
+					<a target="blank" href="https://newslab.ru/news/905321" class="society region">«Изолировали от лишнего внимания»: появились первые сведения о состоянии пойманной в Норильске медведицы</a>
+					<a target="blank" href="https://newslab.ru/news/902567" class="politics region">Ревизоры и профессионалы: более 70 человек вошли в советы директоров краевых предприятий</a>
+					<a target="blank" href="https://newslab.ru/news/902566" class="society region">Отдаленные районы и центр Красноярска предложили соединить троллейбусным маршрутом</a>
+					<a target="blank" href="https://newslab.ru/news/902565" class="accidents region">В Красноярском крае третью неделю не могут найти таинственно исчезнувшего волонтера-поисковика</a>
+					<a target="blank" href="https://newslab.ru/news/902564" class="society siberia">К Красноярску подбирается 30-градусная жара</a>
+					<a target="blank" href="https://newslab.ru/news/902563" class="politics region">Губернатор отправил в отставку красноярского министра здравоохранения</a>
+					<a target="blank" href="https://newslab.ru/news/902562" class="society region">На юге Красноярского края сфотографировали редкую хищную птицу: с заботой охраняла гнездо</a>
+					<a target="blank" href="https://newslab.ru/news/902561" class="accidents siberia">13-летний мальчик поехал автостопом из Кемерово в Красноярск и пропал</a>
+					<a target="blank" href="https://newslab.ru/news/902538" class="society region">Прогулки по квадрату в центре, гитарная вечеринка и долгожданный бассейн: среда в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/902489" class="accidents region">На правобережье Красноярска три семьи остались без жилья из-за разрушительного пожара (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902464" class="society region">Самое интересное в Красноярске за 4 июня: «крутой замес» политиков и много опасной пыли</a>
+					<a target="blank" href="https://newslab.ru/news/905320" class="society russia">РУСАЛ принимает участие в международной выставке упаковочной индустрии RosUpack</a>
+					<a target="blank" href="https://newslab.ru/news/902463" class="politics region">«Испытываю противоречивые чувства»: Дмитрий Свиридов прокомментировал нарушения в краевом леспроме</a>
+					<a target="blank" href="https://newslab.ru/news/902462" class="accidents region">Сотрудник красноярского уголовного розыска дал начальнику 30 тысяч взятки и остался на свободе</a>
+					<a target="blank" href="https://newslab.ru/news/902461" class="society region">Филины «Роева ручья» выгнали уборщиков из вольера из-за появления птенцов (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902460" class="economy region">СГК продолжает строительство теплосетей до Николаевского моста</a>
+					<a target="blank" href="https://newslab.ru/news/902459" class="society region">СФУ стабильно входит в топ-20 российских вузов</a>
+					<a target="blank" href="https://newslab.ru/news/902458" class="economy region">Богучанская ГЭС увеличивает расходы через гидроагрегаты</a>
+					<a target="blank" href="https://newslab.ru/news/902457" class="society region">В Красноярске водителям запретят один поворот с Брянской ради безопасности</a>
+					<a target="blank" href="https://newslab.ru/news/902456" class="society region">Красноярские мусульмане отпраздновали Ураза-байрам</a>
+					<a target="blank" href="https://newslab.ru/news/902455" class="society region">Жители Дудинки показали настоящий ледоход на Енисее (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902454" class="society region">Летние платья и текстиль от лучших российских производителей привезут на ярмарку в МВДЦ «Сибирь»</a>
+					<a target="blank" href="https://newslab.ru/news/905316" class="accidents region">Столб дыма над Афонтовским переулком напугал жителей правобережья Красноярска (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902453" class="society region">Безобразные остановки на окраине Красноярска пообещали заменить до конца месяца</a>
+					<a target="blank" href="https://newslab.ru/news/902450" class="politics region">«Широкомасштабная провокация»: Сергей Пономаренко обвинил автора интервью с главой Счетной палаты в вымогательстве (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902449" class="society region">Завтра в Красноярске заработает первый открытый бассейн</a>
+					<a target="blank" href="https://newslab.ru/news/902424" class="accidents region">ФСБ сорвала красноярским супругам сделку по продаже килограмма наркотиков</a>
+					<a target="blank" href="https://newslab.ru/news/902423" class="economy region">«Мы знаем, что в лесной отрасли большой теневой оборот»: правительство края ответило на критику Счетной палаты</a>
+					<a target="blank" href="https://newslab.ru/news/902422" class="accidents region">Красноярская Росгвардия рассказала о добром поступке сотрудника. Помог в автобусе незнакомой женщине</a>
+					<a target="blank" href="https://newslab.ru/news/902421" class="accidents region">На прошлой неделе в воздухе Красноярска нашли слишком много пыли</a>
+					<a target="blank" href="https://newslab.ru/news/902420" class="accidents region">На севере Красноярского края перевернулась лодка с молодыми людьми: двое погибли</a>
+					<a target="blank" href="https://newslab.ru/news/902419" class="society region">«Разберут и соберут по винтику»: в Красноярске за 16 млн отремонтируют мост через Бугач</a>
+					<a target="blank" href="https://newslab.ru/news/902418" class="society region">На Октябрьский и Коммунальный мосты Красноярска собираются вернуть трамваи</a>
+					<a target="blank" href="https://newslab.ru/news/905317" class="society region">Красноярская клиническая больница получила 3 млн рублей на новое оборудование</a>
+					<a target="blank" href="https://newslab.ru/news/902417" class="accidents region">В Покровке юный велосипедист внезапно выехал из-за припаркованных машин и попал в ДТП (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902416" class="accidents region">В Красноярском крае пенсионерку насмерть загрызла соседская собака</a>
+					<a target="blank" href="https://newslab.ru/news/902415" class="accidents region">Полиция назвала самые популярные нарушения среди красноярских байкеров (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902414" class="society region">В День города шаттлы до Татышева будут бесплатными</a>
+					<a target="blank" href="https://newslab.ru/news/902413" class="accidents region">На Дивногорской трассе фура раздавила легковой автомобиль</a>
+					<a target="blank" href="https://newslab.ru/news/902412" class="accidents region">На Торгашинском хребте в Красноярске возобновят поиски пропавшего в прошлом году глухого грибника</a>
+					<a target="blank" href="https://newslab.ru/news/902386" class="politics region">Красноярскому депутату вручили руководство по Minecraft. Он предлагал запретить популярную видеоигру</a>
+					<a target="blank" href="https://newslab.ru/news/902385" class="accidents siberia">Следователи обнародовали первые результаты вскрытия тел погибших в Приисковом туристов</a>
+					<a target="blank" href="https://newslab.ru/news/902384" class="society region">В Красноярском крае открылся первый пляж</a>
+					<a target="blank" href="https://newslab.ru/news/902383" class="society region">В красноярской школе появилась маленькая кофейная плантация</a>
+					<a target="blank" href="https://newslab.ru/news/905315" class="accidents region">Следователи рассказали обстоятельства гибели подростка на карьере под Красноярском</a>
+					<a target="blank" href="https://newslab.ru/news/902382" class="society region">Житель Минусинска может лишиться американской машины за долги перед дочерью</a>
+					<a target="blank" href="https://newslab.ru/news/902380" class="society region">Красноярка с нарушением слуха выступит на подиуме Московской недели моды</a>
+					<a target="blank" href="https://newslab.ru/news/902379" class="sport region">После вылета из Премьер-лиги футбольный «Енисей» покинула почти половина команды</a>
+					<a target="blank" href="https://newslab.ru/news/902378" class="accidents region">В центре Красноярска подрались водители маршруток. Спорили об очередности движения (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902377" class="society region">Красноярский край вошёл в топ-10 регионов с грязнейшим воздухом</a>
+					<a target="blank" href="https://newslab.ru/news/902376" class="accidents region">В Красноярске осудили граффитиста, испортившего десятки зданий</a>
+					<a target="blank" href="https://newslab.ru/news/902375" class="accidents region">В Красноярском крае теленок погиб под колесами тепловоза. Хозяина накажут штрафом</a>
+					<a target="blank" href="https://newslab.ru/news/902374" class="economy region">Реальные доходы красноярцев продолжают падать</a>
+					<a target="blank" href="https://newslab.ru/news/902373" class="sport region">На острове Татышеве наконец запустили прокат велосипедов. Мэрия назвала цены нового сезона</a>
+					<a target="blank" href="https://newslab.ru/news/902372" class="culture russia">Победителем международного конкурса чтецов «Живая классика» стал школьник из Красноярского края</a>
+					<a target="blank" href="https://newslab.ru/news/905313" class="society russia">Половина россиян проведёт лето без отпуска</a>
+					<a target="blank" href="https://newslab.ru/news/902370" class="economy region">На ЭХЗ в Зеленогорске завершились работы по установке уникального масс-спектрометра</a>
+					<a target="blank" href="https://newslab.ru/news/902371" class="accidents region">Ночной пожар на складе ГСМ в Солонцах напугал красноярцев. Его все еще не ликвидировали (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902347" class="society region">Тренировки в парке, «звучание» улицы и Stand Up: вторник в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/902272" class="society region">Самое интересное в Красноярске за 3 июня: «резкая» чиновница, советы для островов, падающие и красноярцы, и зарплаты</a>
+					<a target="blank" href="https://newslab.ru/news/902274" class="accidents region">Красноярский рыбак сумел спастись из тонущего автомобиля. Грозит срок за гибель жены</a>
+					<a target="blank" href="https://newslab.ru/news/902273" class="society region">Синоптики пообещали красноярцам жаркий июнь с ливнями и грозами</a>
+					<a target="blank" href="https://newslab.ru/news/902271" class="accidents region">Красноярцы регулярно падают в маршрутках. ГИБДД дала им советы</a>
+					<a target="blank" href="https://newslab.ru/news/902270" class="null">Горожан спросят о развитии красноярских островов</a>
+					<a target="blank" href="https://newslab.ru/news/902269" class="accidents region">В Красноярском крае экс-начальник колонии получил срок за попытку выманить у заключенного 8 миллионов</a>
+					<a target="blank" href="https://newslab.ru/news/902268" class="economy russia">ВТБ рефинансирует ипотечные кредиты под 5 %</a>
+					<a target="blank" href="https://newslab.ru/news/905287" class="culture region">В Красноярске могут выступить оперные звезды Хосе Каррерас и Анна Нетребко</a>
+					<a target="blank" href="https://newslab.ru/news/902267" class="economy russia">Каждый пятый россиянин заметил уменьшение зарплаты</a>
+					<a target="blank" href="https://newslab.ru/news/902266" class="society region">Красноярские ученые создали прибор для снижения риска инсульта</a>
+					<a target="blank" href="https://newslab.ru/news/902265" class="society region">«Музыкальный фонтан и кафе с видом на Енисей»: губернатору представили проект благоустройства набережной в Дивногорске</a>
+					<a target="blank" href="https://newslab.ru/news/902233" class="accidents siberia">Поисковики сообщили об обнаружении тел еще двоих пропавших в Приисковом туристов</a>
+					<a target="blank" href="https://newslab.ru/news/902264" class="society russia">В России могут отказаться от установки счетчиков тепла в новых квартирах</a>
+					<a target="blank" href="https://newslab.ru/news/902238" class="society region">«Не больше 200 звонков»: красноярский колл-центр отчитался о первом дне перехода на «цифру»</a>
+					<a target="blank" href="https://newslab.ru/news/902237" class="culture region">В Красноярске пройдет киномарафон под открытым небом</a>
+					<a target="blank" href="https://newslab.ru/news/902236" class="accidents region">Школьник из Дивногорска заманил в лес 14-летнего мальчика и надругался над ним: отправили в колонию</a>
+					<a target="blank" href="https://newslab.ru/news/902234" class="society region">«Балаганы среди пней»: красноярец побывал в городских парках и выдвинул шквал претензий к мэрии</a>
+					<a target="blank" href="https://newslab.ru/news/902232" class="society region">Богучанская ГЭС выделила 400 тысяч рублей на мобильный компьютерный класс в Кодинске</a>
+					<a target="blank" href="https://newslab.ru/news/905286" class="society region">В Красноярске готовят участок под строительство переезда через Северное шоссе</a>
+					<a target="blank" href="https://newslab.ru/news/902231" class="economy region">Красноярскому губернатору и другим чиновникам будут считать зарплату по-новому</a>
+					<a target="blank" href="https://newslab.ru/news/902229" class="accidents region">Информацию об угрозах в адрес председателя Счетной палаты проверили спецслужбы</a>
+					<a target="blank" href="https://newslab.ru/news/902230" class="society region">Зеленогорский детсад пробился в финал чемпионата по футболу «Школы Росатома» 5+</a>
+					<a target="blank" href="https://newslab.ru/news/902228" class="economy region">«Реакция будет незамедлительной»: губернатор прокомментировал заявления Счетной палаты о нарушениях в минлесхозе</a>
+					<a target="blank" href="https://newslab.ru/news/902227" class="society region">Жители Красноярского края стали держать меньше коров и завели больше северных оленей</a>
+					<a target="blank" href="https://newslab.ru/news/902226" class="sport region">65-летний красноярец стал чемпионом города по подтягиваниям. Прежний лидер уступил ему из-за травмы</a>
+					<a target="blank" href="https://newslab.ru/news/902225" class="society region">Радостный норильчанин отметил начало лета прыжком в сугроб с разбега (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902224" class="accidents region">В новостройке в Солнечном рухнул потолок</a>
+					<a target="blank" href="https://newslab.ru/news/902223" class="accidents region">В Канске экскаваторщик перепродал 1,5 тысячи литров солярки. Грозит два года колонии</a>
+					<a target="blank" href="https://newslab.ru/news/902222" class="society region">Краевой «закон о тишине» поменяют из-за стройки в Норильске</a>
+					<a target="blank" href="https://newslab.ru/news/905517" class="null">На вывоз мусора с красноярских кладбищ потребуется больше сотни миллионов рублей в год</a>
+					<a target="blank" href="https://newslab.ru/news/905285" class="economy region">Названы самые высокооплачиваемые вакансии в Красноярском крае</a>
+					<a target="blank" href="https://newslab.ru/news/902197" class="accidents siberia">Участники свадебного кортежа тувинской элиты попали в лобовое ДТП с пострадавшими (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902196" class="accidents region">В Ачинске косуля угодила в опасную дробилку (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902195" class="society russia">«Школа городских изменений» РУСАЛа запускает новый обучающий курс</a>
+					<a target="blank" href="https://newslab.ru/news/902193" class="accidents region">После стройки на Николаевской сопке в Красноярске овраг с ручейком превратился в болото</a>
+					<a target="blank" href="https://newslab.ru/news/902192" class="society russia">Красноярцам предложили принять участие в масштабном турнире по мобильному киберспорту</a>
+					<a target="blank" href="https://newslab.ru/news/902190" class="society region">Жителям Красноярского края напомнили о компенсации трат на подключение к цифровому телевидению</a>
+					<a target="blank" href="https://newslab.ru/news/902189" class="society region">На летней ярмарке в Красноярске представят товары и продукты из Греции, Черногории и стран ближнего зарубежья</a>
+					<a target="blank" href="https://newslab.ru/news/902188" class="society region">Красноярские врачи дали советы по спасению от тополиного пуха</a>
+					<a target="blank" href="https://newslab.ru/news/902187" class="politics region">У министра цифрового развития Красноярского края появились два новых заместителя</a>
+					<a target="blank" href="https://newslab.ru/news/902186" class="accidents region">В красноярском Академгородке неизвестные повредили «Ягуар»</a>
+					<a target="blank" href="https://newslab.ru/news/905281" class="economy region">На заправках КНП почти на 2 рубля подешевел бензин</a>
+					<a target="blank" href="https://newslab.ru/news/902185" class="society region">По правому берегу Красноярска пронесут икону Преображения Господня</a>
+					<a target="blank" href="https://newslab.ru/news/902184" class="society region">Из-за долгов три жилищные организации не смогут собирать с красноярцев деньги за коммунальные услуги</a>
+					<a target="blank" href="https://newslab.ru/news/902183" class="society region">Красноярский заповедник показал первое купание маленьких утят</a>
+					<a target="blank" href="https://newslab.ru/news/902182" class="accidents region">Клещи стали еще активнее нападать на красноярцев</a>
+					<a target="blank" href="https://newslab.ru/news/902181" class="society region">На неделе в Красноярск придет летняя жара и подует вредный для экологии восточный ветер</a>
+					<a target="blank" href="https://newslab.ru/news/902158" class="society region">Рокетмен, «плоская» любовь и бодрый вечер у Енисея: понедельник в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/902109" class="society region">Минтрансу представили новый проект красноярского метро с наземными станциями</a>
+					<a target="blank" href="https://newslab.ru/news/902084" class="society russia">Отмена роуминга и цифровое телевидение: какие изменения ждут красноярцев с июня</a>
+					<a target="blank" href="https://newslab.ru/news/902058" class="society region">На детском карнавале в Красноярске исполнили песню скандальной метал-группы Slipknot (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902057" class="society region">У самки сервала в красноярском зоопарке появился новый друг по кличке Флэш</a>
+					<a target="blank" href="https://newslab.ru/news/905284" class="society russia">Российских водителей предложили лишать прав за отсутствие полиса ОСАГО</a>
+					<a target="blank" href="https://newslab.ru/news/902056" class="accidents region">На Красноярской ТЭЦ-1 произошёл пожар</a>
+					<a target="blank" href="https://newslab.ru/news/902031" class="accidents region">Пьяный красноярец на ВАЗе ночью влетел в бетонный забор возле «Медакадемии» (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/902030" class="society region">Красноярцы успели сделать много снимков салюта в честь Дня города-2019</a>
+					<a target="blank" href="https://newslab.ru/news/902029" class="society region">«Карнавал уехал, а мусор остался»: последствия детского праздника возмутили красноярцев</a>
+					<a target="blank" href="https://newslab.ru/news/901906" class="accidents region">На Красноярском море подняли провалившуюся 2 месяца назад под лед машину с женщиной в салоне</a>
+					<a target="blank" href="https://newslab.ru/news/901905" class="accidents region">Бродячие собаки растерзали ручных животных в красноярском парке «Троя»</a>
+					<a target="blank" href="https://newslab.ru/news/901880" class="economy region">В Минусинске обсудили подготовку к 200-летию города</a>
+					<a target="blank" href="https://newslab.ru/news/901857" class="society region">День города с салютом, много еды на Караульной горе и праздник на набережной: выходные в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/901782" class="society region">Самое интересное в Красноярске за 31 мая: грязью политые водители, 100 уродливых зданий и талисман смерти</a>
+					<a target="blank" href="https://newslab.ru/news/901784" class="accidents region">«Время упущено, мальчик неоперабелен»: следователи начали проверку по факту халатности красноярских врачей</a>
+					<a target="blank" href="https://newslab.ru/news/905282" class="economy region">Красноярским предпринимателям расскажут все о современном ритейле</a>
+					<a target="blank" href="https://newslab.ru/news/901783" class="politics region">Таймыр вновь возглавил бывший руководитель МЧС по Красноярскому краю</a>
+					<a target="blank" href="https://newslab.ru/news/901781" class="society russia">Аэропорт Красноярска второй раз за год сменил официальное название</a>
+					<a target="blank" href="https://newslab.ru/news/901777" class="economy region">Талисману Красноярской филармонии случайно дали имя в честь погибшего музыканта (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901779" class="accidents region">Сотрудники ГИБДД впервые решили раздавать детские автокресла на выезде из Красноярска (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901778" class="accidents russia">Госдума приняла закон о лишении свободы на срок до 15 лет за «пьяные» ДТП с жертвами</a>
+					<a target="blank" href="https://newslab.ru/news/901752" class="accidents region">«С ребёнком на руках»: полиция за сутки вычислила автоледи-нарушительницу по фото из соцсетей (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901750" class="accidents region">Красноярский 10-летний велосипедист попал под колеса иномарки. В ГИБДД винят в аварии его самого (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901749" class="accidents region">Бабушка из Шарыпово привела домой лже-целительниц и отдала им деньги с украшениями. Теперь их накажут за мошенничество</a>
+					<a target="blank" href="https://newslab.ru/news/901747" class="society region">«Ростелеком» пригласил красноярцев на праздник «Зеленый Марафон»</a>
+					<a target="blank" href="https://newslab.ru/news/901746" class="society region">В красноярские «Тихие зори» начинает ходить автобус</a>
+					<a target="blank" href="https://newslab.ru/news/905280" class="accidents region">«Что-то прятал под бетонную плиту»: в Советском районе Красноярска поймали закладчика наркотиков (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901745" class="accidents region">Впервые в Красноярске пьяных водителей будут ловить 3 ночи подряд</a>
+					<a target="blank" href="https://newslab.ru/news/901744" class="sport region">Бизнесмены Красноярска устроили штурм инфоцентра Татышева с заявками на велопрокат (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901743" class="society region">Роструд: рабочий день в жару можно сокращать</a>
+					<a target="blank" href="https://newslab.ru/news/901742" class="society region">Активисты проекта «Чистая страна» проверили Красноярский алюминиевый завод</a>
+					<a target="blank" href="https://newslab.ru/news/901741" class="society russia">Новогодние каникулы 2020 года в России будут короче обычных</a>
+					<a target="blank" href="https://newslab.ru/news/901740" class="accidents region">Полицейские нашли граффитистов, изуродовавших за ночь более 100 зданий в центре Красноярска (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901739" class="society region">В Красноярском крае вузы поменяли правила приёма на обучение по квотам</a>
+					<a target="blank" href="https://newslab.ru/news/901738" class="accidents region">«Обманом заманил в капкан и убил»: на юге Красноярского края будут судить браконьера из Тувы</a>
+					<a target="blank" href="https://newslab.ru/news/901737" class="society region">Житель Норильска перешёл лужу по стене и стал «звездой» инстаграма (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901712" class="society region">Красноярские школьницы получили патент на бумажный «кулек» для воды</a>
+					<a target="blank" href="https://newslab.ru/news/905279" class="accidents region">«Врезался в ворота и загорелся»: в Советском районе пьяная компания уничтожила Делимобиль (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901711" class="society region">Красноярцам не дают покоя шумные тележки супермаркета с первого этажа многоэтажки</a>
+					<a target="blank" href="https://newslab.ru/news/901709" class="accidents siberia">Отбывающего срок за сдачу в аренду чужих квартир минусинца будут судить за такие же преступления</a>
+					<a target="blank" href="https://newslab.ru/news/901708" class="society region">Святыни со всех епархий Красноярского края привезут на выставку «Сибирь православная»</a>
+					<a target="blank" href="https://newslab.ru/news/901707" class="economy russia">В России собираются выпускать лакированные 100-рублевые купюры</a>
+					<a target="blank" href="https://newslab.ru/news/901706" class="society region">Красноярцы стали реже заводить детей</a>
+					<a target="blank" href="https://newslab.ru/news/901705" class="society region">В Красноярском крае стартует сезон работы трудовых отрядов СУЭК</a>
+					<a target="blank" href="https://newslab.ru/news/901704" class="accidents region">Жителя края с признаками умственной отсталости лишили водительских прав</a>
+					<a target="blank" href="https://newslab.ru/news/901703" class="accidents region">В Канске росгвардейцы разбили окна в горящем доме, чтобы спасти двух женщин</a>
+					<a target="blank" href="https://newslab.ru/news/901702" class="economy region">«После обучения человек должен вернуться в деревню»: краевые депутаты обсудили подготовку молодых специалистов для сельского хозяйства</a>
+					<a target="blank" href="https://newslab.ru/news/901701" class="society region">Сегодня в Красноярске прогремят взрывы и завоют сирены</a>
+					<a target="blank" href="https://newslab.ru/news/905278" class="society region">В СибГУ им. Решетнева стартовала приемная кампания. Будущих студентов ждут более 3 тысяч бюджетных мест</a>
+					<a target="blank" href="https://newslab.ru/news/901695" class="accidents region">В Красноярске пьяный водитель Toyota слетел в кювет и скрылся от полиции на автоэвакуаторе</a>
+					<a target="blank" href="https://newslab.ru/news/901476" class="society region">Пиццерия «Пицца Синица» дарит красноярцам пиццу за опоздания</a>
+					<a target="blank" href="https://newslab.ru/news/901562" class="society region">«Изменяясь внешне, сохраняем ценности»: «АРЕВЕРА-Недвижимость» обновила фирменный стиль</a>
+					<a target="blank" href="https://newslab.ru/news/901694" class="society region">Красноярским садоводам упростят получение лицензии на водяную скважину</a>
+					<a target="blank" href="https://newslab.ru/news/901693" class="accidents region">Красноярского военнослужащего и фсиновца лишили званий и свободы за торговлю гашишем</a>
+					<a target="blank" href="https://newslab.ru/news/901692" class="society region">Красноярские дороги стали поливать и днем. Некоторых водителей это разозлило (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901691" class="society region">Первые летние выходные не порадуют красноярцев жарой</a>
+					<a target="blank" href="https://newslab.ru/news/901668" class="society region">Концерт грека и француза, регби с Пензой и запутанная история «семьи»: пятница в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/901595" class="society region">Самое интересное в Красноярске за 30 мая: неудобный проспект Мира, отстрел косолапых и «хороший» срок за добрые дела</a>
+					<a target="blank" href="https://newslab.ru/news/901594" class="accidents region">В Советском районе неосторожные курильщики сожгли свою квартиру и напугали соседей</a>
+					<a target="blank" href="https://newslab.ru/news/905277" class="society region">Красноярцев позвали отдыхать на пляж, который не одобрил Роспотребнадзор</a>
+					<a target="blank" href="https://newslab.ru/news/901593" class="society region">В России врачей обязали пускать родственников больного в реанимацию</a>
+					<a target="blank" href="https://newslab.ru/news/901592" class="accidents region">В центре Красноярска ремонтируют постамент памятника Славе Глюку</a>
+					<a target="blank" href="https://newslab.ru/news/901591" class="economy region">Красноярский край вошел в топ-20 российских регионов по производству молока</a>
+					<a target="blank" href="https://newslab.ru/news/901558" class="culture russia">«Виновата инвентаризация»: в Красноярске обнаружили ранее неизвестный рисунок Сурикова</a>
+					<a target="blank" href="https://newslab.ru/news/901590" class="society region">48 красноярских школьников попали в летнюю научную школу «Ученые будущего»</a>
+					<a target="blank" href="https://newslab.ru/news/901565" class="accidents region">В Емельяновском районе вместо санитарной чистки леса «черные лесорубы» спилили 98 гектаров сосен (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901564" class="accidents region">Сильный ветер доберется и до Красноярска</a>
+					<a target="blank" href="https://newslab.ru/news/901563" class="accidents region">На севере Красноярского края отважный школьник спас из ледяной реки девочку</a>
+					<a target="blank" href="https://newslab.ru/news/901560" class="society region">В мэрии рассказали о планах по перезапуску проекта платных парковок</a>
+					<a target="blank" href="https://newslab.ru/news/901559" class="society region">Красноярцев научат профессионально жаловаться на дороги</a>
+					<a target="blank" href="https://newslab.ru/news/905276" class="accidents region">На таксистов Красноярска устроили облаву (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901557" class="accidents region">Красноярские следователи вернули москвичке 3-летнего сына, которого в 2017 году похитил его отец</a>
+					<a target="blank" href="https://newslab.ru/news/901556" class="accidents region">Жительница Ачинска хотела продать инвалидное кресло в интернете и лишилась 130 тысяч рублей</a>
+					<a target="blank" href="https://newslab.ru/news/901555" class="accidents region">В Красноярском крае отстрелят почти сотню опасных медведей</a>
+					<a target="blank" href="https://newslab.ru/news/901554" class="accidents region">Стали известны первые результаты голосования за лучший проект крематория</a>
+					<a target="blank" href="https://newslab.ru/news/901553" class="society region">Православный журналист Юрий Воробьевский прочитает лекции для красноярцев</a>
+					<a target="blank" href="https://newslab.ru/news/901552" class="society region">В рамках проекта «День учителя на объектах атомной отрасли» ЭХЗ посетили педагоги из Красноярска</a>
+					<a target="blank" href="https://newslab.ru/news/901504" class="economy russia">Президент РФ Владимир Путин наградил сотрудников «Норникеля» за строительство Быстринского ГОКа</a>
+					<a target="blank" href="https://newslab.ru/news/901551" class="economy region">Банк «Акцепт» начал выдавать кредиты наличными красноярцам</a>
+					<a target="blank" href="https://newslab.ru/news/901550" class="society region">Красноярские городовые не будут убирать уродливую рекламу с фасадов торговых центров</a>
+					<a target="blank" href="https://newslab.ru/news/901519" class="accidents region">В Красноярске экс-депутату Аркадию Волкову дали 7 лет колонии строгого режима</a>
+					<a target="blank" href="https://newslab.ru/news/905273" class="economy region">Енисейское речное пароходство начало доставлять грузы для Норильского промышленного района</a>
+					<a target="blank" href="https://newslab.ru/news/901549" class="society region">Красноярцам разрешат зайти в любой отдел полиции и узнать о его работе. Стражи порядка «откроют двери» только на один день</a>
+					<a target="blank" href="https://newslab.ru/news/901523" class="society region">В Красноярске мебель и матрасы проверили на прочность</a>
+					<a target="blank" href="https://newslab.ru/news/901524" class="society region">МегаФон в Сибири открывает эпоху «умных городов»</a>
+					<a target="blank" href="https://newslab.ru/news/901522" class="accidents region">Экологический волонтер застукал водителя при выгрузке мусора под Красноярском. Тот сразу же лишился грузовика</a>
+					<a target="blank" href="https://newslab.ru/news/901521" class="society region">Краснярских детсадовцев на лето «переселят» в огороды и японские сады</a>
+					<a target="blank" href="https://newslab.ru/news/901518" class="society region">В Красноярске на два дня запретят велосипеды на набережной</a>
+					<a target="blank" href="https://newslab.ru/news/901517" class="society region">Россияне стали больше пьянствовать</a>
+					<a target="blank" href="https://newslab.ru/news/901516" class="society region">Полицейские звали прохожих у красноярского ТРЦ устроиться к ним на работу</a>
+					<a target="blank" href="https://newslab.ru/news/901513" class="society region">За долги перед четырьмя детьми жительницу края заставили убираться в течение 80 часов</a>
+					<a target="blank" href="https://newslab.ru/news/901514" class="society region">«Бобровый лог» начали обрабатывать от клещей</a>
+					<a target="blank" href="https://newslab.ru/news/905515" class="society region">В Красноярске готовятся реставрировать историческое здание аграрного университета</a>
+					<a target="blank" href="https://newslab.ru/news/905275" class="accidents region">«Повернул через полосу»: красноярский мотоциклист попал в больницу из-за нарушителя на Lada</a>
+					<a target="blank" href="https://newslab.ru/news/901511" class="society region">Красноярцев предупредили о длительных перекрытиях дорог в центре и на правобережье</a>
+					<a target="blank" href="https://newslab.ru/news/901508" class="society region">Жители Красноярского края за год выкурили сигарет на 15 миллиардов</a>
+					<a target="blank" href="https://newslab.ru/news/901506" class="accidents siberia">Угнанную в Иркутске иномарку случайно нашли в Красноярске (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901505" class="society region">«Больше всего повреждений в Ленинском районе»: энергетики завершили испытания сетей и вернули красноярцам горячую воду</a>
+					<a target="blank" href="https://newslab.ru/news/901503" class="society region">Возле БКЗ появится детская площадка за 3,5 миллиона рублей</a>
+					<a target="blank" href="https://newslab.ru/news/901502" class="accidents siberia">Жителей Красноярского края пугают грозами и ливнями, после которых придет прохлада</a>
+					<a target="blank" href="https://newslab.ru/news/901478" class="economy region">«Норникель» поддержит рублем норильских предпринимателей</a>
+					<a target="blank" href="https://newslab.ru/news/901501" class="accidents region">Молодой водитель ВАЗа сбил школьницу на неоживленной улице правобережья Красноярска</a>
+					<a target="blank" href="https://newslab.ru/news/901370" class="society region">Жара, Годзилла и научпоп: четверг в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/901401" class="society region">Самое интересное в Красноярске за 29 мая: отличный поворот, опасный Плюшкин с Мичурина и ларьки в огне</a>
+					<a target="blank" href="https://newslab.ru/news/905274" class="accidents region">«Не кормите и не приближайтесь»: белого медведя в Норильске готовят к перевозке (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901403" class="accidents region">В Красноярске за катание по выделенке оштрафовали нарушителя на служебной машине мэрии</a>
+					<a target="blank" href="https://newslab.ru/news/901402" class="sport region">Красноярцев позвали в 50-метровый бассейн в новом спорткомплексе «Радуга»</a>
+					<a target="blank" href="https://newslab.ru/news/901400" class="accidents region">На правобережье Красноярска странный мужчина превратил двор и подъезд дома в опасный склад хлама</a>
+					<a target="blank" href="https://newslab.ru/news/901399" class="accidents region">Полицейские попросили красноярских водителей не портить комплексы фиксации нарушений ПДД и предупредили о наказании за это</a>
+					<a target="blank" href="https://newslab.ru/news/901372" class="society region">В Красноярске стартовал крупнейший за Уралом форум для стоматологов</a>
+					<a target="blank" href="https://newslab.ru/news/901366" class="society region">Официальный дилер Volkswagen в Красноярске объявил специальные предложения на покупку Volkswagen Teramont</a>
+					<a target="blank" href="https://newslab.ru/news/901369" class="society region">Красноярск готовится к всероссийской «Ночи квестов»</a>
+					<a target="blank" href="https://newslab.ru/news/901373" class="accidents region">В районе Телевизорной горят торговые ряды</a>
+					<a target="blank" href="https://newslab.ru/news/901371" class="society region">Дорожники: с новой схемой на Дубровинского стало меньше пробок (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901368" class="society russia">Инициатива СУЭК по развитию детских шахмат стала лучшим социальным проектом России</a>
+					<a target="blank" href="https://newslab.ru/news/905272" class="society siberia">На заимку Агафьи Лыковой может упасть фрагмент ракеты. Отшельница все равно отказалась уезжать</a>
+					<a target="blank" href="https://newslab.ru/news/901367" class="society region">У прилетевших в Красноярск иностранцев отобрали 370 кг еды и сожгли её</a>
+					<a target="blank" href="https://newslab.ru/news/901365" class="society region">Таймырского охотника наказали за массовое убийство северных оленей. Конституционный суд защитил его</a>
+					<a target="blank" href="https://newslab.ru/news/901364" class="accidents region">«Где-то рядом ходит мама»: у трассы в Красноярском крае заметили сразу трёх гуляющих медвежат (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901363" class="society region">Приставы рассказали, где в Красноярском крае живут самые злостные алиментщики</a>
+					<a target="blank" href="https://newslab.ru/news/901362" class="society region">На правобережье Красноярска ради ремонта канализации пересаживают 80 новых деревьев</a>
+					<a target="blank" href="https://newslab.ru/news/901361" class="society region">Студент Аэрокосмического колледжа СибГУ им. М.Ф. Решетнева занял третье место на национальном чемпионате «Молодые профессионалы»</a>
+					<a target="blank" href="https://newslab.ru/news/901360" class="society region">Красноярские НКО смогут бесплатно получить краевое имущество</a>
+					<a target="blank" href="https://newslab.ru/news/901359" class="culture region">На острове Татышеве в Красноярске стартуют «Музыкальные пятницы»</a>
+					<a target="blank" href="https://newslab.ru/news/901358" class="accidents siberia">В Красноярском крае нашли «черных кредиторов». Клиенты рисковали машинами и деньгами</a>
+					<a target="blank" href="https://newslab.ru/news/901212" class="society region">«Вместе повысим качество продуктов»: «Енисейский стандарт» и Россельхознадзор подписали соглашение о сотрудничестве</a>
+					<a target="blank" href="https://newslab.ru/news/905271" class="accidents region">Под Красноярском подростка насмерть засыпало песком</a>
+					<a target="blank" href="https://newslab.ru/news/901333" class="economy region">«Это территория с огромным потенциалом»: в Красноярске завершилась стратегическая сессия по развитию Севера</a>
+					<a target="blank" href="https://newslab.ru/news/901332" class="society region">«Постельное белье, старые сумки и игрушки»: красноярцам рассказали, что подарить питомцам зоопарка на 1 июня</a>
+					<a target="blank" href="https://newslab.ru/news/901330" class="society region">В людные места Красноярска привозят экзотические деревья</a>
+					<a target="blank" href="https://newslab.ru/news/901329" class="society region">В Красноярске нашли «скверные» ларьки. Горожане дают ещё наводки</a>
+					<a target="blank" href="https://newslab.ru/news/901328" class="culture region">Почти 2 тысячи красноярцев посетили спектакли «РУСАЛ ФестивAL #Театр»</a>
+					<a target="blank" href="https://newslab.ru/news/901327" class="sport region">«Напряжение нарастает»: в Красноярске завершился очередной этап Лиги чемпионов бизнеса</a>
+					<a target="blank" href="https://newslab.ru/news/901326" class="society region">В Красноярске изменился порядок выдачи направлений в детские сады</a>
+					<a target="blank" href="https://newslab.ru/news/901325" class="economy region">Жители Красноярского края стали тратить больше денег на рестораны и кафе</a>
+					<a target="blank" href="https://newslab.ru/news/901324" class="economy region">В Красноярском крае подписана лесная хартия</a>
+					<a target="blank" href="https://newslab.ru/news/901323" class="accidents region">Житель Хакасии не смог продать в Минусинске 4,5 тысячи литров поддельного алкоголя (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/905270" class="accidents region">6-летний мальчик неожиданно выехал со двора храма и врезался в иномарку</a>
+					<a target="blank" href="https://newslab.ru/news/901321" class="society region">«Говорим „нет“ вандализму»: стену на левобережной набережной отдадут граффитчикам</a>
+					<a target="blank" href="https://newslab.ru/news/901320" class="sport region">Красноярцы смогут снова окунуться в атмосферу Зимней универсиады-2019 на Всероссийском Олимпийском дне</a>
+					<a target="blank" href="https://newslab.ru/news/901319" class="accidents region">Молодой красноярец через интернет заказал наркотики на 3 миллиона и попал под арест (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901318" class="economy russia">СМИ: в России может появиться «отцовский капитал»</a>
+					<a target="blank" href="https://newslab.ru/news/901316" class="accidents region">В Зеленой роще неизвестный избил и ограбил мужчину. Полиция ищет его месяц и просит помощи</a>
+					<a target="blank" href="https://newslab.ru/news/901315" class="society region">Порывы на теплосетях в Красноярске ищет робот (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901314" class="economy region">Красноярский цементный завод готов к «высокому» строительному сезону-2019</a>
+					<a target="blank" href="https://newslab.ru/news/901313" class="sport world">Красноярск вошел в десятку городов, где пройдет мировой чемпионат по волейболу</a>
+					<a target="blank" href="https://newslab.ru/news/901311" class="economy region">«Норникель» получил премию конкурса Российского союза промышленников и предпринимателей</a>
+					<a target="blank" href="https://newslab.ru/news/901312" class="society world">Собирающихся за границу красноярцев предупредили о свирепствующих там опасных инфекциях</a>
+					<a target="blank" href="https://newslab.ru/news/905124" class="economy region">Красноярских бизнесменов приглашают на интенсив по управлению финансами</a>
+					<a target="blank" href="https://newslab.ru/news/901127" class="society region">Задумывающимся о смене места жительства красноярцам предложили переехать за город</a>
+					<a target="blank" href="https://newslab.ru/news/901264" class="society region">Ядовитая роза Траволты, бесплатный «лимузин» и безумная муза: среда в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/901214" class="society region">Самое интересное в Красноярске за 28 мая: ребёнок-председатель, нарушители из мэрии и никаких петухов</a>
+					<a target="blank" href="https://newslab.ru/news/901215" class="society region">Стройки развлекательного центра рядом с Дворцом Труда в Красноярске не будет</a>
+					<a target="blank" href="https://newslab.ru/news/901213" class="accidents region">В Ермаковском районе сгорело леса на 2 миллиона. Лесных пожарных заподозрили в бездействии</a>
+					<a target="blank" href="https://newslab.ru/news/901211" class="economy region">Прокуратура проверила работу платных парковок в Красноярске и заявила о нарушении прав водителей. Наложенные на них штрафы оказались незаконными</a>
+					<a target="blank" href="https://newslab.ru/news/901209" class="accidents region">Служебный автомобиль мэрии Красноярска поймали на катании по выделенной полосе (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901208" class="society region">Более 2,5 тысяч красноярцев не смогут отдохнуть за границей из-за коммунальных долгов</a>
+					<a target="blank" href="https://newslab.ru/news/901182" class="sport region">Объекты Зимней универсиады-2019 показали участникам конференции о подготовке спортивного резерва в России</a>
+					<a target="blank" href="https://newslab.ru/news/901207" class="society russia">Красноярские школьники стали участниками сессии «Молодой лидер» в Сочи</a>
+					<a target="blank" href="https://newslab.ru/news/905247" class="society region">Закрытый поворот на дороге, оркестр без дирижёра и детские истории: четверг в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/901181" class="economy region">На стратегической сессии в Красноярске обсудили развитие северных территорий</a>
+					<a target="blank" href="https://newslab.ru/news/901180" class="society region">Красноярец выплатил дочери алименты лишь после ареста только что купленной машины</a>
+					<a target="blank" href="https://newslab.ru/news/901178" class="society region">«Черные археологи» раскопали древний могильник в Красноярском крае</a>
+					<a target="blank" href="https://newslab.ru/news/901177" class="society region">«Жалкое животное в луже»: красноярцы недовольны переносом фонтана на Предмостной</a>
+					<a target="blank" href="https://newslab.ru/news/901176" class="society region">Бизнесмен заплатил «Красноярскэнергосбыту» 300 тысяч рублей за сорванную со счетчика пломбу</a>
+					<a target="blank" href="https://newslab.ru/news/901175" class="society region">«Радиомарафон и исторические экскурсии»: красноярцев в шестой раз позвали на «Летнюю кухню»</a>
+					<a target="blank" href="https://newslab.ru/news/901173" class="society region">В ближайшие сутки в Красноярске резко и аномально потеплеет</a>
+					<a target="blank" href="https://newslab.ru/news/901171" class="society region">В центре Красноярска всё лето будут устраивать опен-эйры</a>
+					<a target="blank" href="https://newslab.ru/news/901170" class="society russia">В России поменяли правила обязательного медицинского страхования</a>
+					<a target="blank" href="https://newslab.ru/news/901169" class="culture region">Красноярский театр представит на сцене свою версию дуэли Пушкина</a>
+					<a target="blank" href="https://newslab.ru/news/905173" class="society region">Самое интересное в Красноярске за 19 июня: нудисты на дорогах и пылесос для правого берега</a>
+					<a target="blank" href="https://newslab.ru/news/901167" class="economy region">РУСАЛ получил лицензию на разработку Горячегорского месторождения</a>
+					<a target="blank" href="https://newslab.ru/news/901142" class="society region">Красноярцы больше никогда не увидят фигуры цветочных петуха и медведя</a>
+					<a target="blank" href="https://newslab.ru/news/901141" class="society region">Студенты СФУ выиграли серебряные медали на чемпионате России по регби</a>
+					<a target="blank" href="https://newslab.ru/news/901140" class="society region">Покрашенный к Универсиаде фасад красноярского почтамта начали ремонтировать заново</a>
+					<a target="blank" href="https://newslab.ru/news/901139" class="society region">Ведущие специалисты России и зарубежья приедут на Сибирский стоматологический форум</a>
+					<a target="blank" href="https://newslab.ru/news/901138" class="accidents region">В ветреную неделю воздух Красноярска был почти идеально чистым. Жалобы на его качество назвали необоснованными</a>
+					<a target="blank" href="https://newslab.ru/news/901137" class="society region">В Северном вновь спиливают деревья. На этот раз ради рекламных щитов</a>
+					<a target="blank" href="https://newslab.ru/news/901136" class="accidents region">Пьяный красноярец разбил машину о дерево в районе Каштака, устроил лесной пожар и уснул на дороге (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901135" class="accidents region">На севере Красноярского края медведь вышел на детскую площадку. Его пришлось застрелить</a>
+					<a target="blank" href="https://newslab.ru/news/901134" class="economy russia">Банк «Открытие» стал победителем конкурса «Лучшая банковская программа для МСП — 2019»</a>
+					<a target="blank" href="https://newslab.ru/news/905172" class="society region">В Красноярске заложили первый камень здания Третьего арбитражного суда</a>
+					<a target="blank" href="https://newslab.ru/news/901131" class="society region">Красноярские эксперты рассказали, как собрать ребенка в лагерь</a>
+					<a target="blank" href="https://newslab.ru/news/901130" class="society region">В Красноярском крае стали строить меньше жилья</a>
+					<a target="blank" href="https://newslab.ru/news/901132" class="society region">Красноярские футболисты «Тотема» сразятся в финале турнира «Будущее зависит от тебя» за путевку в лагерь ФК «Барселона»</a>
+					<a target="blank" href="https://newslab.ru/news/901129" class="accidents region">Житель края выращивал коноплю вместе с помидорами и попался. Потом он дал полицейскому 150 тысяч взятки и теперь лишится свободы (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901126" class="accidents region">В Красноярске 9-летний ребенок «провел» собрание жильцов и передал дом из одной управляющей компании в другую</a>
+					<a target="blank" href="https://newslab.ru/news/901125" class="society region">Энергетики Красноярской ТЭЦ-1 стали лучшими на соревнованиях по профмастерству</a>
+					<a target="blank" href="https://newslab.ru/news/901124" class="society region">«Норникель» стал лауреатом премии «Лучшие социальные проекты России»</a>
+					<a target="blank" href="https://newslab.ru/news/901045" class="sport region">На объекте Зимней универсиады-2019 прошло первенство Красноярского края по легкой атлетике</a>
+					<a target="blank" href="https://newslab.ru/news/901123" class="accidents region">Полицейские поймали рыбных браконьеров и забрали у них икру (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901122" class="accidents region">Бывшему главврачу красноярской поликлиники № 7 дали три года колонии</a>
+					<a target="blank" href="https://newslab.ru/news/905171" class="society region">Красноярский контрактник прогулял службу в Чечне и получил судимость</a>
+					<a target="blank" href="https://newslab.ru/news/901121" class="society region">Центр Красноярска перекроют 1 июня ради детского шествия</a>
+					<a target="blank" href="https://newslab.ru/news/901047" class="society region">Инопланетный ужас, перекрытые дороги и куртизанка в Сибири: вторник в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/901041" class="society region">Самое интересное в Красноярске за 27 мая: ласки с гадюкой, скромные зарплаты и полный пакет вони</a>
+					<a target="blank" href="https://newslab.ru/news/901048" class="accidents region">«Стали активнее в жаркую погоду»: на «Столбах» прокомментировали нападение змеи на красноярца</a>
+					<a target="blank" href="https://newslab.ru/news/901049" class="accidents region">Глава Ширинского района Хакасии напал на журналистов федерального канала. Возбудили уголовное дело (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901046" class="accidents region">Девятилетний мальчик выбежал под колеса машины на опасной дороге к «Столбам» (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901044" class="economy region">«Падение выручки и сокращение магазинов»: СМИ сообщили о проблемах «Ашана» в России</a>
+					<a target="blank" href="https://newslab.ru/news/901042" class="accidents region">В Красноярске поймали угонщика сгоревшей Toyota Camry</a>
+					<a target="blank" href="https://newslab.ru/news/901040" class="society region">В профильных классах СУЭК прозвенел последний звонок</a>
+					<a target="blank" href="https://newslab.ru/news/901015" class="accidents region">Главные следователь и спасатель Красноярского края впервые отчитались о своих доходах</a>
+					<a target="blank" href="https://newslab.ru/news/905512" class="society region">«Красноярскэнергосбыт» взыскал более 670 тыс. рублей с красноярской управляющей компании</a>
+					<a target="blank" href="https://newslab.ru/news/905170" class="accidents region">Железногорец зарезал жену из ревности и хотел переложить вину на знакомого</a>
+					<a target="blank" href="https://newslab.ru/news/901014" class="accidents region">«Переоценили свои силы»: поисковики рассказали свою версию гибели туристов в Приисковом</a>
+					<a target="blank" href="https://newslab.ru/news/901013" class="culture region">«Канатоходец над Енисеем и 12 дней удивления»: красноярцам раскрыли подробности празднования Дня города</a>
+					<a target="blank" href="https://newslab.ru/news/901012" class="accidents region">В Красноярске 7-летняя девочка упала в яму с горячей золой и получила ожоги 90 % тела</a>
+					<a target="blank" href="https://newslab.ru/news/901007" class="society russia">Российские автолюбители голосованием определили лучшие марки и модели авто</a>
+					<a target="blank" href="https://newslab.ru/news/901008" class="society russia">В России могут ужесточить правила призыва в армию</a>
+					<a target="blank" href="https://newslab.ru/news/901006" class="accidents region">Красноярские полицейские подкараулили ночных гонщиков на популярных среди них улицах и наказали за все нарушения (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901005" class="society region">Сибирских стоматологов обучат швейцарским технологиям на форуме в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/900998" class="economy siberia">«Инвестируем в сельское хозяйство»: банк «Акцепт» размещает облигации «ОбъединенияАгроЭлита»</a>
+					<a target="blank" href="https://newslab.ru/news/901003" class="accidents region">«Был страх перед неизвестностью и медведями»: туристка рассказала о том, как потерялась на Борусе</a>
+					<a target="blank" href="https://newslab.ru/news/901002" class="accidents region">«Думали, ужик, решили потискать и сделать фото, а оказалась гадюка»: стали известны подробности нападения змеи на красноярца</a>
+					<a target="blank" href="https://newslab.ru/news/905169" class="accidents region">Полицейский Красноярска не добился условного срока за присвоение квартиры умершей бабушки</a>
+					<a target="blank" href="https://newslab.ru/news/901001" class="accidents region">Хитрый «бизнесмен» из Приморья снабжал жителей Красноярского края несуществующей техникой (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/901000" class="politics region">Мэр Сергей Ерёмин утвердил нового главу департамента горхозяйства</a>
+					<a target="blank" href="https://newslab.ru/news/900951" class="sport region">На базе объекта Зимней универсиады-2019 прошел чемпионат России по скалолазанию</a>
+					<a target="blank" href="https://newslab.ru/news/900999" class="society region">МегаФон ускорил сеть 4G в пяти городах Красноярского края</a>
+					<a target="blank" href="https://newslab.ru/news/900997" class="society region">«Рыба Сибири и граница миров»: красноярцам показали новые арт-объекты</a>
+					<a target="blank" href="https://newslab.ru/news/900995" class="economy russia">Глава аналитического управления банка «Открытие» назвала основной источник будущего роста российской экономики</a>
+					<a target="blank" href="https://newslab.ru/news/900994" class="society region">В Красноярском крае этим летом будет почти 30 легальных пляжей</a>
+					<a target="blank" href="https://newslab.ru/news/900969" class="society region">«Состояние вызывает серьезное беспокойство»: специалисты обследовали погибающие ели у краевого правительства</a>
+					<a target="blank" href="https://newslab.ru/news/900968" class="society region">Приставы назвали «приметы» типичного красноярского алиментщика</a>
+					<a target="blank" href="https://newslab.ru/news/900967" class="accidents region">В Ачинске 80-летняя старушка «выкупила» внука из беды за 100 тысяч рублей</a>
+					<a target="blank" href="https://newslab.ru/news/905168" class="accidents region">Высокопоставленный красноярский гуфсиновец избил 6 заключенных и остался на свободе (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/900966" class="society region">В Красноярске запустили «цифровых» воздушных змеев</a>
+					<a target="blank" href="https://newslab.ru/news/900965" class="society region">На Татышеве появились два пандуса для колясок и маломобильных горожан (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/900964" class="society region">В Березовой роще Студгородка на «вонючие» канализационные люки надели крышки из полиэтилена</a>
+					<a target="blank" href="https://newslab.ru/news/900963" class="society region">«Нет элементарного порядка»: Александр Усс проверил Енисейск перед юбилеем</a>
+					<a target="blank" href="https://newslab.ru/news/900962" class="society region">В Красноярске перекроют центр для празднования Дня пограничника</a>
+					<a target="blank" href="https://newslab.ru/news/900955" class="sport region">В Дудинке завершился самый северный турнир по кёрлингу WCT Arctic Curling Cup</a>
+					<a target="blank" href="https://newslab.ru/news/900959" class="society region">Полицейские помогли больному красноярцу сделать документы и похвастались своей отзывчивостью</a>
+					<a target="blank" href="https://newslab.ru/news/900958" class="sport region">«Вошёл в образ и покрутил педали»: Сергей Ерёмин возглавил колонну велопарада в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/900956" class="accidents region">В Енисейске ночью сгорел двухэтажный барак. Площадь пожара превысила 1000 квадратных метров (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/900954" class="society region">Красноярская бизнес-леди оставила жителя Шарыпово без окна и заплатит ему за это</a>
+					<a target="blank" href="https://newslab.ru/news/905142" class="society region">Четыре выпускника в Красноярском крае сдали ЕГЭ по физике и математике на 200 баллов</a>
+					<a target="blank" href="https://newslab.ru/news/900953" class="accidents region">В Красноярске самосвал без водителя выехал на ж/д пути и преградил дорогу электричкам</a>
+					<a target="blank" href="https://newslab.ru/news/900950" class="society region">В последнюю неделю весны красноярцев ждут температурные «качели». А в начале лета внезапно наступит прохлада</a>
+					<a target="blank" href="https://newslab.ru/news/900949" class="accidents region">На «Столбах» мужчину укусила змея. Другие туристы на выходных тоже повстречали этих опасных животных</a>
+					<a target="blank" href="https://newslab.ru/news/900830" class="society region">Апгрейд мозга, игрища престолов и живой звук Corgi: понедельник в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/900805" class="accidents region">В Красноярском крае в пожаре погибли мужчина и трое маленьких детей (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/900804" class="accidents region">Синоптики предупредили красноярцев о грозе и шквалистом ветре</a>
+					<a target="blank" href="https://newslab.ru/news/900803" class="society region">Красноярцев призвали жаловаться на неправильную торговлю алкоголем</a>
+					<a target="blank" href="https://newslab.ru/news/900802" class="society region">На Высотной поток машин остановился и пропустил утку с утятами (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/900801" class="accidents siberia">В Приисковом нашли тело еще одного пропавшего в ноябре туриста</a>
+					<a target="blank" href="https://newslab.ru/news/900680" class="society russia">Полицейские напомнили, как действовать в случае исчезновения ребенка</a>
+					<a target="blank" href="https://newslab.ru/news/905139" class="economy region">В августе в Красноярске на месте супермаркетов Rosa откроются «Пятёрочки»</a>
+					<a target="blank" href="https://newslab.ru/news/900679" class="accidents region">Ночью на Свободном после двух ДТП сгорела угнанная из автосервиса Toyota. Виновников ищет полиция</a>
+					<a target="blank" href="https://newslab.ru/news/900654" class="accidents region">В Приисковом найдено тело одного из пропавших зимой красноярских туристов</a>
+					<a target="blank" href="https://newslab.ru/news/900542" class="society region">Перекрытые улицы, фестиваль красок и музыкальный электрофорез: выходные в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/900507" class="economy region">«Без просрочек и переплат»: красноярцам рассказали, как правильно закрыть погашенный кредит</a>
+					<a target="blank" href="https://newslab.ru/news/900544" class="society region">Самое интересное в Красноярске за 24 мая: хитрые чиновники, светящиеся деревья и дебош</a>
+					<a target="blank" href="https://newslab.ru/news/900545" class="accidents region">Минусинская разбойница скрывалась от правосудия 15 лет. Успела родить дочь, но все равно попалась</a>
+					<a target="blank" href="https://newslab.ru/news/900543" class="society region">Красноярскую набережную начали охранять полицейские на велосипедах</a>
+					<a target="blank" href="https://newslab.ru/news/900504" class="sport region">Спортивная общественность края обсудила итоги Студенческих игр в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/900541" class="accidents region">В Черемушках две бабушки-нарушительницы попали под колеса «девятки» в 50 метрах от перехода</a>
+					<a target="blank" href="https://newslab.ru/news/900540" class="accidents region">Впервые за долгое время в воздухе Красноярска скопится грязь</a>
+					<a target="blank" href="https://newslab.ru/news/905138" class="society region">Почти половина сгущенки на красноярских прилавках не соответствует нормам</a>
+					<a target="blank" href="https://newslab.ru/news/900515" class="accidents region">Красноярские следователи раскрыли убийство 15-летней давности</a>
+					<a target="blank" href="https://newslab.ru/news/900514" class="accidents region">На Королева мужчина с автоматом и маске ворвался в подсобку супермаркета и разбил компьютеры</a>
+					<a target="blank" href="https://newslab.ru/news/900513" class="society region">Теплолюбивые животные из красноярского зоопарка переехали на улицу (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/900511" class="accidents region">Хакасские спасатели снова попытаются найти пропавших в прошлом году красноярских снегоходчиков</a>
+					<a target="blank" href="https://newslab.ru/news/900510" class="society region">«Вы — достойная смена!»: спикер Законодательного Собрания поздравил красноярских выпускников с последним звонком</a>
+					<a target="blank" href="https://newslab.ru/news/900509" class="society region">СГК открыла в Красноярске еще один офис обслуживания клиентов</a>
+					<a target="blank" href="https://newslab.ru/news/900505" class="society region">Красноярские врачи спасли дедушку с разрывом брюшной аорты</a>
+					<a target="blank" href="https://newslab.ru/news/900503" class="accidents region">Красноярские клещи продолжают «захватывать» новые территории: добрались до Покровского и «Гремячей гривы»</a>
+					<a target="blank" href="https://newslab.ru/news/900502" class="accidents region">Больше половины лесных пожаров в Красноярском крае произошли из-за поджогов сухой травы</a>
+					<a target="blank" href="https://newslab.ru/news/900501" class="society region">Красноярцы отказываются от ремонта крыш в пользу замены труб в домах</a>
+					<a target="blank" href="https://newslab.ru/news/905143" class="society region">«Изучите перед поступлением сайты работы»: в СФУ стартовала приемная кампания</a>
+					<a target="blank" href="https://newslab.ru/news/900500" class="sport region">Опытом Зимней универсиады-2019 делятся с оргкомитетом Студенческих игр в Швейцарии</a>
+					<a target="blank" href="https://newslab.ru/news/900498" class="sport region">На объекте Зимней универсиады-2019 завершились «Президентские состязания» школьников</a>
+					<a target="blank" href="https://newslab.ru/news/900499" class="society region">Дважды сбегавший из армии красноярец попал в колонию</a>
+					<a target="blank" href="https://newslab.ru/news/900473" class="society region">В Железнодорожном районе Красноярска подсветили 100 деревьев</a>
+					<a target="blank" href="https://newslab.ru/news/900472" class="society region">На правобережье Красноярска на месяц закрывают популярную улицу</a>
+					<a target="blank" href="https://newslab.ru/news/900471" class="accidents region">«Опасные развлечения»: школьники Норильска пугают жителей своими рисковыми сальто с крыш (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/900470" class="society region">На Богучанском водохранилище завершился ледоход</a>
+					<a target="blank" href="https://newslab.ru/news/900468" class="null">Зеленогорка захотела дешево купить породистых щенков в интернете и попалась мошенникам</a>
+					<a target="blank" href="https://newslab.ru/news/900467" class="society region">«Ребенок становится заложником взрослой жизни»: детский омбудсмен рассказала о конфликтах в семьях и росте разводов</a>
+					<a target="blank" href="https://newslab.ru/news/900466" class="accidents region">«Проверять будем максимально быстро»: в Красноярске готовят ночные облавы на пьяных водителей</a>
+					<a target="blank" href="https://newslab.ru/news/905137" class="accidents region">В центре Красноярска водитель сбил женщину, извинился и уехал. Объявили в розыск</a>
+					<a target="blank" href="https://newslab.ru/news/900465" class="sport region">Чемпионат России по фигурному катанию-2020 пройдет на льду «Платинум Арены Красноярск»</a>
+					<a target="blank" href="https://newslab.ru/news/900464" class="society region">Ели в центре Красноярска пожухли и осыпаются. Деревьям проведут обследование</a>
+					<a target="blank" href="https://newslab.ru/news/900463" class="politics region">Десять чиновников из красноярской мэрии наказали за утаивание информации о доходах</a>
+					<a target="blank" href="https://newslab.ru/news/900460" class="accidents region">В Ачинске неизвестный насмерть сбил подростка. Сейчас его разыскивают</a>
+					<a target="blank" href="https://newslab.ru/news/900458" class="society region">В последние выходные мая в Красноярске установится летняя погода. Но пока лишь на два дня</a>
+					<a target="blank" href="https://newslab.ru/news/900328" class="society region">Последние звонки, перемены на дорогах и хор со всей страной: пятница в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/900362" class="society region">Самое интересное в Красноярске за 23 мая: смерть шашлычек, новые автобусы и «собачье» дело</a>
+					<a target="blank" href="https://newslab.ru/news/900314" class="society region">В Хакасии «нашли» больше 200 несуществующих журналистов на окладе у республиканского правительства</a>
+					<a target="blank" href="https://newslab.ru/news/900361" class="society region">Красноярским маршрутчикам рекомендовали перекрасить автобусы</a>
+					<a target="blank" href="https://newslab.ru/news/900360" class="accidents region">Красноярская полиция показала задержание подозреваемых в убийстве бизнес-леди (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/905136" class="society region">Владелец гостиницы вовремя не поменял счетчик и теперь заплатит полмиллиона рублей «Красноярскэнергосбыту»</a>
+					<a target="blank" href="https://newslab.ru/news/900359" class="society region">«Хочется слышать слова приветствия»: красноярских маршрутчиков научили правильно помогать пассажирам-инвалидам</a>
+					<a target="blank" href="https://newslab.ru/news/900358" class="society region">В физико-математической школе СФУ прозвучал последний звонок</a>
+					<a target="blank" href="https://newslab.ru/news/900357" class="society region">В Красноярском крае строители схалтурили при капремонте крыши и получили крупный штраф</a>
+					<a target="blank" href="https://newslab.ru/news/900356" class="society region">СФУ представил молодежную площадку на выставке «Антитеррор»</a>
+					<a target="blank" href="https://newslab.ru/news/900355" class="economy region">«Край получил приличные деньги»: депутаты поддержали весеннюю корректировку бюджета</a>
+					<a target="blank" href="https://newslab.ru/news/900354" class="society region">В Енисейске на месте пустыря разобьют «Монастырский парк»</a>
+					<a target="blank" href="https://newslab.ru/news/900353" class="accidents region">В Красноярске во время ограбления задушили бизнес-леди</a>
+					<a target="blank" href="https://newslab.ru/news/900327" class="economy region">«Повышать не будем»: спикер Законодательного Собрания прокомментировал увеличение зарплаты губернатору и чиновникам</a>
+					<a target="blank" href="https://newslab.ru/news/900119" class="society region">Котельные задолжали «Красноярскэнергосбыту» 447 млн рублей</a>
+					<a target="blank" href="https://newslab.ru/news/900325" class="society region">«Мегашашки и много сказочных героев»: красноярская мэрия раскрыла программу Дня защиты детей</a>
+					<a target="blank" href="https://newslab.ru/news/905135" class="accidents region">Должница из Красноярского края не смогла незаметно продать дом</a>
+					<a target="blank" href="https://newslab.ru/news/900324" class="sport region">Спортсмены из Красноярского края стали победителями чемпионата России по северному многоборью</a>
+					<a target="blank" href="https://newslab.ru/news/900323" class="accidents region">Владелец лесопилки в Канске не заплатил зарплату своему юристу и чуть не потерял арендованный лес</a>
+					<a target="blank" href="https://newslab.ru/news/900322" class="sport region">«Нащупали свою игру»: в Красноярске завершился 4-й тур Лиги чемпионов бизнеса</a>
+					<a target="blank" href="https://newslab.ru/news/900321" class="society region">На красноярском бульваре Менжинского сделают лавочки из габионов и посадят новогоднюю елку</a>
+					<a target="blank" href="https://newslab.ru/news/900320" class="accidents region">На юге Красноярского края поймали рыбного браконьера. Спасти удалось только 20 рыб из 315 (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/900319" class="society region">Жители Солнечного получат горячую и холодную воду по временной схеме</a>
+					<a target="blank" href="https://newslab.ru/news/900318" class="society region">В Красноярске закрывают один въезд на Коммунальный мост</a>
+					<a target="blank" href="https://newslab.ru/news/900313" class="accidents region">На Крупской дети повредили припаркованный минивэн (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/900312" class="society russia">РУСАЛ реализует почти 90 экологических проектов в 17 городах России</a>
+					<a target="blank" href="https://newslab.ru/news/900311" class="society region">Теплоэнергетики восстанавливают красноярские дворы после ремонта сетей</a>
+					<a target="blank" href="https://newslab.ru/news/905509" class="society region">Часть домов на Взлетке и в Северном получит горячую воду раньше обещанного</a>
+					<a target="blank" href="https://newslab.ru/news/905134" class="society region">С завтрашнего дня на Брянской в Красноярске запретят опасный поворот</a>
+					<a target="blank" href="https://newslab.ru/news/900280" class="sport region">Во время соревнований гости Зимней универсиады-2019 устраивали фототуры во все уголки Красноярска</a>
+					<a target="blank" href="https://newslab.ru/news/900310" class="society region">Активисты «Зеленой дружины» высадили в красноярском сквере кусты сирени</a>
+					<a target="blank" href="https://newslab.ru/news/900309" class="accidents region">В Красноярском крае пропал мужчина. Волонтеры прочесывают лес и ручьи</a>
+					<a target="blank" href="https://newslab.ru/news/900308" class="economy region">Комбинат «Волна» готов к «высокому» строительному сезону</a>
+					<a target="blank" href="https://newslab.ru/news/901520" class="society region">Города и сёла Красноярского края получат 90 млн рублей на благоустройство</a>
+					<a target="blank" href="https://newslab.ru/news/900088" class="sport region">На базе объекта Зимней универсиады-2019 в Красноярске стартовал Кубок России по скалолазанию</a>
+					<a target="blank" href="https://newslab.ru/news/900283" class="society region">Стали известны подробности конкурса на лучший проект крематория</a>
+					<a target="blank" href="https://newslab.ru/news/900282" class="society region">В Красноярске залатали ямы возле моста «777» и еще на двух улицах Ленинского района</a>
+					<a target="blank" href="https://newslab.ru/news/900281" class="society region">«Прокат на Татышеве под угрозой»: прием заявок на аренду земли под велосипеды не состоялся</a>
+					<a target="blank" href="https://newslab.ru/news/900279" class="society region">В Красноярске отлов бродячих псов проходит с нарушениями</a>
+					<a target="blank" href="https://newslab.ru/news/905133" class="society region">На западе Красноярского края начался ремонт двух важных дорог</a>
+					<a target="blank" href="https://newslab.ru/news/900278" class="society region">В центре Красноярска начертили ярко-красный велопереезд</a>
+					<a target="blank" href="https://newslab.ru/news/900272" class="society region">Четвертый экомарафон «Понеслось» собрал рекордное количество участников</a>
+					<a target="blank" href="https://newslab.ru/news/900277" class="society region">Виадук возле Центрального парка освободят от кафе и шашлычных</a>
+					<a target="blank" href="https://newslab.ru/news/900275" class="society region">Статистики: численность населения в Красноярском крае сократилась</a>
+					<a target="blank" href="https://newslab.ru/news/900274" class="society region">На остров Татышев в Красноярске пустят специальные автобусы</a>
+					<a target="blank" href="https://newslab.ru/news/900273" class="accidents region">В Красноярске водитель «Мерседеса» повернул в запрещенном месте и наехал на стоящего посреди дороги пешехода (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/900163" class="sport region">Посол Зимней универсиады-2019 Ольга Медведцева наградила победителей Спартакиады и Студенческих игр</a>
+					<a target="blank" href="https://newslab.ru/news/900269" class="accidents region">«Сидит, допивает»: нетрезвый водитель устроил ДТП на Октябрьском мосту</a>
+					<a target="blank" href="https://newslab.ru/news/900270" class="sport region">В Дудинке стартует Арктический кубок по кёрлингу</a>
+					<a target="blank" href="https://newslab.ru/news/900268" class="accidents region">Названы виновные в повреждении самолета в аэропорту Норильска</a>
+					<a target="blank" href="https://newslab.ru/news/905127" class="accidents region">Жителям Красноярского края напомнили правила хранения велосипедов. Нарушителей могут оштрафовать</a>
+					<a target="blank" href="https://newslab.ru/news/900267" class="politics region">Назначен новый заместитель главы Красноярска. Как и обещал мэр, пост получила женщина</a>
+					<a target="blank" href="https://newslab.ru/news/900089" class="society russia">13 344 клиента сделали рекламу для оператора Yota</a>
+					<a target="blank" href="https://newslab.ru/news/900241" class="society region">Катастрофа доверия, фильм про элегантного маньяка и шкодный концерт: четверг в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/900166" class="society region">Самое интересное в Красноярске за 22 мая: пляжный сезон, щедрый губернатор и секрет хороших дорог</a>
+					<a target="blank" href="https://newslab.ru/news/900165" class="society region">В Красноярске впервые прошел открытый урок мужества «Сибирь — Кавказ. Тропой героев»</a>
+					<a target="blank" href="https://newslab.ru/news/900164" class="accidents region">Сбежавшего из Красноярска экс-директора «Реставрации» задержали в Италии</a>
+					<a target="blank" href="https://newslab.ru/news/900162" class="accidents region">В Красноярском крае мужчина бросился в горящий дом спасать сына. Погибли оба (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/900158" class="society region">В Красноярске открылся юбилейный всероссийский форум «Современные системы безопасности — Антитеррор»</a>
+					<a target="blank" href="https://newslab.ru/news/900160" class="sport region">«Масштаб впечатляет»: Дирекция Зимней универсиады-2019 показала, как «Платинум Арену» готовили к церемонии открытия игр</a>
+					<a target="blank" href="https://newslab.ru/news/900159" class="accidents region">Ветер не уйдет из Красноярска и в четверг. Стихия будет бушевать всю ночь и только наберет обороты</a>
+					<a target="blank" href="https://newslab.ru/news/905132" class="accidents region">Водитель Subaru заехал в лужу, врезался в дом и разбил еще 3 машины: появилось видео ДТП</a>
+					<a target="blank" href="https://newslab.ru/news/900157" class="accidents region">Красноярские экологи закрыли банный комплекс за загрязнение атмосферы</a>
+					<a target="blank" href="https://newslab.ru/news/900132" class="culture region">В Красноярске стартовал театральный фестиваль РУСАЛа</a>
+					<a target="blank" href="https://newslab.ru/news/900131" class="society region">С окраины Красноярска второй день вывозят мусор. Глава района пристыдил жителей за огромные траты на уборку</a>
+					<a target="blank" href="https://newslab.ru/news/901515" class="economy region">В Красноярском крае продолжается реализация национальных проектов</a>
+					<a target="blank" href="https://newslab.ru/news/900129" class="accidents region">5-летний ребенок упал на базе отдыха под Красноярском и лишился селезенки</a>
+					<a target="blank" href="https://newslab.ru/news/900128" class="society region">Молодые работники ЭХЗ и клинической больницы провели субботник в зеленогорском больничном городке</a>
+					<a target="blank" href="https://newslab.ru/news/900127" class="society region">«Не варимся в своей каше»: красноярских дорожников учат латать ямы специалисты из Питера</a>
+					<a target="blank" href="https://newslab.ru/news/900126" class="economy region">Япония планирует сотрудничать с Красноярским краем в проектах «Енисейской Сибири»</a>
+					<a target="blank" href="https://newslab.ru/news/900121" class="accidents region">Гости Агафьи Лыковой застряли в тайге и ждут подъема воды на обмелевшей реке</a>
+					<a target="blank" href="https://newslab.ru/news/900125" class="politics region">Александр Усс прокомментировал слухи о повышении губернаторской зарплаты</a>
+					<a target="blank" href="https://newslab.ru/news/905131" class="society region">Красноярские дорожники смастерили уличный пылесос из двух мусорных бачков и компрессора</a>
+					<a target="blank" href="https://newslab.ru/news/900124" class="society region">Организаторы детского карнавала получили необходимую сумму для проведения шествия</a>
+					<a target="blank" href="https://newslab.ru/news/900122" class="economy region">В Красноярском крае зерновыми засеяли 65 % полей</a>
+					<a target="blank" href="https://newslab.ru/news/900118" class="society region">В Талнахе мужчина потерял друга в драке и отсудил у него полмиллиона</a>
+					<a target="blank" href="https://newslab.ru/news/899933" class="society region">Сотрудники «Красноярскэнергосбыта» сдали более 34 литров крови</a>
+					<a target="blank" href="https://newslab.ru/news/900117" class="economy region">Госдолг Красноярского края снизился на 4 млрд рублей</a>
+					<a target="blank" href="https://newslab.ru/news/900092" class="politics region">Двум министрам Красноярского края назначили новых заместителей</a>
+					<a target="blank" href="https://newslab.ru/news/900091" class="accidents region">Бизнесмен из Красноярского края пойдет под суд за 20 неоконченных ремонтов</a>
+					<a target="blank" href="https://newslab.ru/news/900087" class="society region">Из-за велопарада и детского крестного хода в центре Красноярска перекроют дороги</a>
+					<a target="blank" href="https://newslab.ru/news/900086" class="society region">Красноярск начали готовить к пляжному сезону</a>
+					<a target="blank" href="https://newslab.ru/news/900085" class="economy region">«Жители ждут, но не получают»: капремонт домов в Красноярске не выполнили даже наполовину</a>
+					<a target="blank" href="https://newslab.ru/news/905130" class="culture region">Красноярский фестиваль «МИР Сибири»-2019 может стать самым детским</a>
+					<a target="blank" href="https://newslab.ru/news/900084" class="accidents region">Красноярские полицейские сговорились и присвоили квартиру умершей бабушки. Их осудили, а жилье отдали многодетной семье</a>
+					<a target="blank" href="https://newslab.ru/news/900082" class="accidents region">На Мичурина утром разбили скорую и сбили пешехода</a>
+					<a target="blank" href="https://newslab.ru/news/900081" class="society region">В Назарово прошел краевой детский турнир по регби на призы СУЭК</a>
+					<a target="blank" href="https://newslab.ru/news/900079" class="society region">Красноярка назвала дочь в честь акушерки, которая провела ей экстренную операцию</a>
+					<a target="blank" href="https://newslab.ru/news/900078" class="society region">Студент Аэрокосмического колледжа СибГУ им. М.Ф. Решетнева стал обладателем гран-при всероссийской олимпиады вожатых</a>
+					<a target="blank" href="https://newslab.ru/news/898607" class="society region">Кладовую комнату в подарок получат покупатели квартир в жилом комплексе «Слобода Весны» в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/900077" class="accidents region">Четверо туристов промокли на «Столбах» и попросили спасателей довезти их до остановки</a>
+					<a target="blank" href="https://newslab.ru/news/900076" class="accidents region">В Красноярске разбушевался мощный ветер</a>
+					<a target="blank" href="https://newslab.ru/news/900052" class="society region">Странный дар работяги, немецкий металкор и дом с «заложниками»: среда в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/899977" class="society region">Самое интересное в Красноярске за 21 мая: дорогой бензин, крематорий на выбор и вода раньше времени</a>
+					<a target="blank" href="https://newslab.ru/news/905128" class="society region">«Уже отремонтировали 121 дом»: красноярцам рассказали об успехах программы капремонта</a>
+					<a target="blank" href="https://newslab.ru/news/899978" class="accidents region">Ремонт красноярских улиц привел к уголовным делам. Под следствием предприниматели и руководители госучреждений</a>
+					<a target="blank" href="https://newslab.ru/news/899976" class="society region">Депутата на юге Красноярского края поймали на энерговоровстве</a>
+					<a target="blank" href="https://newslab.ru/news/899975" class="society region">От здания бывшего кинотеатра «Родина» осталась одна стена</a>
+					<a target="blank" href="https://newslab.ru/news/900123" class="economy region">В Красноярском крае сохраняется минимальный уровень безработицы в Сибири</a>
+					<a target="blank" href="https://newslab.ru/news/899974" class="society region">Красноярцев спрашивают о вытрезвителях</a>
+					<a target="blank" href="https://newslab.ru/news/899973" class="accidents region">В Ужурском районе браконьеры черпали рыбу из реки подъемником и попали под уголовное дело</a>
+					<a target="blank" href="https://newslab.ru/news/899972" class="society region">В центре Красноярска стартовал ремонт старейших дворов</a>
+					<a target="blank" href="https://newslab.ru/news/899971" class="society region">Красноярцев позвали на «Забег за мусором»</a>
+					<a target="blank" href="https://newslab.ru/news/899946" class="accidents region">В Сосновоборске подростки пришли к приятелю в гости и нашли его мертвым</a>
+					<a target="blank" href="https://newslab.ru/news/899945" class="accidents region">«Лишение прав до конца жизни»: красноярцы поддержали ужесточение штрафов за пьяную езду</a>
+					<a target="blank" href="https://newslab.ru/news/905129" class="society region">В Шарыпово при поддержке СУЭК открылась секция иппотерапи</a>
+					<a target="blank" href="https://newslab.ru/news/899944" class="society region">Красноярцев позвали встретить первый день лета забегом на четыре километра</a>
+					<a target="blank" href="https://newslab.ru/news/899943" class="society region">«Мишаня, привет!»: в Пировском районе двое местных жителей встретили медведя (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/899941" class="accidents region">В Красноярском крае двоих мужчин арестовали за мошенничество с маткапиталом. Их подельницу пока только задержали</a>
+					<a target="blank" href="https://newslab.ru/news/899940" class="accidents region">Пьяный дивногорец починил разбитую машину до приезда ГИБДД и уснул</a>
+					<a target="blank" href="https://newslab.ru/news/899938" class="society region">«Берём всего 24 часа»: коммунальщики заявили о сокращении срока отключения и холодной воды в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/899937" class="accidents region">В Красноярском крае 50-летний мужчина с портфелем пропал в тайге во время поиска грибника</a>
+					<a target="blank" href="https://newslab.ru/news/899777" class="society region">Голосовой робот набирает популярность среди клиентов «Красноярскэнергосбыта»</a>
+					<a target="blank" href="https://newslab.ru/news/899936" class="society region">В Красноярске стартует юбилейный всероссийский форум «Современные системы безопасности — Антитеррор»</a>
+					<a target="blank" href="https://newslab.ru/news/899935" class="sport russia">Дзюдоистка из полиции Красноярского края поборола всех соперниц и завоевала «золото» на Кубке Европы</a>
+					<a target="blank" href="https://newslab.ru/news/899934" class="society region">Красноярцам предложили выявить рак кожи по фотографии</a>
+					<a target="blank" href="https://newslab.ru/news/905123" class="society siberia">В Сибири готовятся к выпуску лекарства против устойчивого к химиотерапии рака</a>
+					<a target="blank" href="https://newslab.ru/news/899932" class="society region">Кодинским школьникам провели экскурсию по Богучанской ГЭС</a>
+					<a target="blank" href="https://newslab.ru/news/899906" class="accidents region">Инспекторы ГИБДД катались на «скорой» по Красноярску ради необычного эксперимента (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/899905" class="society region">РУСАЛ запустил масштабный проект по лесовосстановлению в Красноярском крае</a>
+					<a target="blank" href="https://newslab.ru/news/899904" class="economy region">В Красноярске пройдут семинары и мастер-классы для опытных и начинающих бизнесменов</a>
+					<a target="blank" href="https://newslab.ru/news/899902" class="accidents region">«Скрывали доходы, помогали с кредитами»: в Красноярске задержали подпольных банкиров (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/899901" class="accidents region">Красноярцы заметили на правобережье автобус «на паровом ходу» (видео)</a>
+					<a target="blank" href="https://newslab.ru/news/899900" class="society region">Красноярские школы перейдут на пятидневку в следующем учебном году</a>
+					<a target="blank" href="https://newslab.ru/news/899898" class="economy region">В Красноярском крае создали более 950 рабочих мест в сельской местности</a>
+					<a target="blank" href="https://newslab.ru/news/899886" class="society region">«Хет-трик от Медведь-Восток»: официальный дилер ŠKODA в Красноярске представил три предложения на ŠKODA OCTAVIA</a>
+					<a target="blank" href="https://newslab.ru/news/899897" class="economy region">Началось голосование за проект красноярского крематория</a>
+					<a target="blank" href="https://newslab.ru/news/905122" class="null">Прокуратура запретила «оздоравливать» детей на бывшей птицефабрике</a>
+					<a target="blank" href="https://newslab.ru/news/899896" class="economy region">В Красноярске впервые за долгое время подорожал бензин. Резко и значительно</a>
+					<a target="blank" href="https://newslab.ru/news/899895" class="accidents region">В Красноярском крае в лесу пропал молодой мужчина. На его поиски отправили всего 5 человек</a>
+					<a target="blank" href="https://newslab.ru/news/899893" class="society region">В Красноярске стартовал сезон работы шумных газонокосилок</a>
+					<a target="blank" href="https://newslab.ru/news/899892" class="society region">Сибирские энергетики поборются за звание лучших на соревнованиях профмастерства в Красноярске</a>
+					<a target="blank" href="https://newslab.ru/news/899891" class="society region">Советскому району пообещали пораньше включить горячую воду</a>
+					<a target="blank" href="https://newslab.ru/news/899890" class="economy region">В мэрию поступило 4 проекта будущего красноярского крематория. Лучший в ходе голосования определят горожане</a>
+					<a target="blank" href="https://newslab.ru/news/899889" class="society region">На «дачных» станциях в Красноярском крае появятся новые пешеходные переходы</a>
+					<a target="blank" href="https://newslab.ru/news/899888" class="economy region">Известный российский бизнес-спикер научит красноярцев управлять сложными подчиненными</a>
+					<a target="blank" href="https://newslab.ru/news/899734" class="society region">В Harley-Davidson Красноярск в наличии появился новый туринг-мотоцикл Electra Glide Standart</a>
+					<a target="blank" href="https://newslab.ru/news/899887" class="accidents siberia">В Кемерово жуткий пожар уничтожил два автоцентра (видео)</a>	
+				</div>
+			</section>
+			<section></section>
+		</main>
+		
+		<!--module: gulp-rigger includes here from /partials-->
+		//=./template/footer.html
+	</div>
+</body>
+</html>
